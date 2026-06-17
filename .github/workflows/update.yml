@@ -1,0 +1,45 @@
+name: Actualizar quiniela
+
+# Corre cada hora de 10:00 a 00:00 (medianoche) hora de Ciudad de México (UTC-6).
+# En UTC eso es de 16:00 a 06:00. También se puede disparar a mano desde la pestaña Actions.
+on:
+  schedule:
+    - cron: "0 0-6,16-23 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-quiniela
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Obtener resultados reales (ESPN)
+        run: python3 fetch_results.py
+
+      - name: Reconstruir index.html
+        run: python3 build_site.py
+
+      - name: Publicar cambios
+        run: |
+          git config user.name "Quiniela Bot"
+          git config user.email "actions@github.com"
+          git add fixtures.json index.html
+          if git diff --staged --quiet; then
+            echo "Sin cambios; nada que publicar."
+          else
+            git commit -m "Actualización automática $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

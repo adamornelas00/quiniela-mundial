@@ -1,0 +1,339 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+build_site.py — Genera index.html de la Quiniela Mundial 2026.
+
+Fuentes:
+  - quiniela_data.json : predicciones de cada participante (no se modifica)
+  - fixtures.json      : calendario maestro oficial + resultados reales
+
+Diseño robusto: los resultados se emparejan con las predicciones POR EQUIPOS
+(no por número de partido), usando el conjunto {local, visitante} dentro de cada
+grupo. Así nunca se asigna un resultado al partido equivocado.
+
+Reglas de puntuación:
+  +1 acertar ganador o empate
+  +1 acertar goles del local
+  +1 acertar goles del visitante
+  (máximo 3 por partido)
+Desempate: 1) más marcadores exactos  2) más cercano al total real de goles.
+
+Uso:  python3 build_site.py
+"""
+import json
+import os
+from datetime import datetime
+
+PLAYERS = ["Adam", "Diego", "Fer", "Santiago"]
+WORKSPACE = os.path.dirname(os.path.abspath(__file__))
+
+MESES = {
+    "01": "ene", "02": "feb", "03": "mar", "04": "abr", "05": "may", "06": "jun",
+    "07": "jul", "08": "ago", "09": "sep", "10": "oct", "11": "nov", "12": "dic",
+}
+
+
+def fecha_corta(iso):
+    try:
+        y, m, d = iso.split("-")
+        return f"{int(d)} {MESES[m]}"
+    except Exception:
+        return iso
+
+
+def winner(hg, ag):
+    if hg is None or ag is None:
+        return None
+    if hg > ag:
+        return "H"
+    if ag > hg:
+        return "A"
+    return "D"
+
+
+def points_for(p_home, p_away, hg, ag):
+    """Devuelve (puntos, exacto_bool, etiquetas)."""
+    if None in (p_home, p_away, hg, ag):
+        return 0, False, []
+    pts, tags = 0, []
+    if winner(p_home, p_away) == winner(hg, ag):
+        pts += 1; tags.append("Resultado")
+    if p_home == hg:
+        pts += 1; tags.append("Local")
+    if p_away == ag:
+        pts += 1; tags.append("Visitante")
+    exacto = (p_home == hg and p_away == ag)
+    return pts, exacto, tags
+
+
+def load_json(name):
+    with open(os.path.join(WORKSPACE, name), "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_pred_index(quinielas):
+    """player -> {(grupo, frozenset(equipos)): pred}"""
+    idx = {}
+    for player in PLAYERS:
+        idx[player] = {}
+        data = quinielas.get(player, {})
+        for group, matches in data.items():
+            if group == "terceros":
+                continue
+            for m in matches:
+                key = (group, frozenset((m["team1"], m["team2"])))
+                idx[player][key] = m
+    return idx
+
+
+def main():
+    quinielas = load_json("quiniela_data.json")
+    fixtures = load_json("fixtures.json")
+    pred_idx = build_pred_index(quinielas)
+
+    # ---- Validación de consistencia de nombres ----
+    problemas = []
+    for fx in fixtures:
+        key = (fx["group"], frozenset((fx["home"], fx["away"])))
+        for player in PLAYERS:
+            if key not in pred_idx[player]:
+                problemas.append(f"{player}: sin predicción para {fx['home']} vs {fx['away']} ({fx['group']})")
+
+    # ---- Cálculo de puntos ----
+    scores = {p: {"points": 0, "exact": 0, "result": 0, "local": 0, "visit": 0,
+                  "wrong": 0, "played": 0, "pending": 0, "pred_goals": 0} for p in PLAYERS}
+
+    # total de goles predichos (todos los partidos)
+    for player in PLAYERS:
+        for key, m in pred_idx[player].items():
+            scores[player]["pred_goals"] += (m.get("goals1") or 0) + (m.get("goals2") or 0)
+
+    real_total_goals = 0
+    for fx in fixtures:
+        if fx["status"] == "FT":
+            real_total_goals += (fx["homeGoals"] or 0) + (fx["awayGoals"] or 0)
+
+    # detalle por partido (para tabla)
+    detalle = []  # cada item: dict con fixture + picks por jugador
+    for fx in sorted(fixtures, key=lambda x: (x["date"], x["group"])):
+        key = (fx["group"], frozenset((fx["home"], fx["away"])))
+        played = fx["status"] == "FT"
+        row = {"fx": fx, "picks": {}}
+        for player in PLAYERS:
+            m = pred_idx[player].get(key)
+            if not m:
+                row["picks"][player] = None
+                continue
+            # orientar predicción a local/visitante del fixture
+            if m["team1"] == fx["home"]:
+                p_home, p_away = m["goals1"], m["goals2"]
+            else:
+                p_home, p_away = m["goals2"], m["goals1"]
+            if played:
+                pts, exacto, tags = points_for(p_home, p_away, fx["homeGoals"], fx["awayGoals"])
+                scores[player]["points"] += pts
+                scores[player]["played"] += 1
+                if exacto:
+                    scores[player]["exact"] += 1
+                elif pts == 0:
+                    scores[player]["wrong"] += 1
+                else:
+                    if "Resultado" in tags: scores[player]["result"] += 1
+                    if "Local" in tags: scores[player]["local"] += 1
+                    if "Visitante" in tags: scores[player]["visit"] += 1
+                row["picks"][player] = {"ph": p_home, "pa": p_away, "pts": pts, "exact": exacto}
+            else:
+                scores[player]["pending"] += 1
+                row["picks"][player] = {"ph": p_home, "pa": p_away, "pts": None, "exact": False}
+        detalle.append(row)
+
+    # ---- Orden con desempates ----
+    ranking = sorted(
+        PLAYERS,
+        key=lambda p: (scores[p]["points"], scores[p]["exact"],
+                       -abs(scores[p]["pred_goals"] - real_total_goals)),
+        reverse=True,
+    )
+
+    html = render(scores, ranking, detalle, real_total_goals, problemas)
+    out = os.path.join(WORKSPACE, "index.html")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(html)
+
+    # ---- Reporte en consola ----
+    print(f"✅ index.html generado — {datetime.now():%Y-%m-%d %H:%M:%S}")
+    jugados = sum(1 for fx in fixtures if fx["status"] == "FT")
+    print(f"   Partidos con resultado: {jugados}/72 | Goles reales acumulados: {real_total_goals}")
+    print("   Tabla:")
+    for i, p in enumerate(ranking, 1):
+        s = scores[p]
+        print(f"   {i}. {p}: {s['points']} pts (exactos {s['exact']}, "
+              f"errados {s['wrong']}, jugados {s['played']}, goles pred {s['pred_goals']})")
+    if problemas:
+        print("\n⚠️  PROBLEMAS DE EMPAREJAMIENTO:")
+        for x in problemas:
+            print("   -", x)
+    else:
+        print("   ✔ Todos los partidos emparejaron con las 4 predicciones.")
+
+
+# ===========================================================================
+#  RENDER HTML
+# ===========================================================================
+MEDALS = ["🥇", "🥈", "🥉", "4️⃣"]
+
+
+def cell_pick(pick):
+    if pick is None:
+        return '<td class="na">—</td>'
+    ph, pa = pick["ph"], pick["pa"]
+    if pick["pts"] is None:  # pendiente
+        return f'<td class="pend">{ph}-{pa}</td>'
+    if pick["exact"]:
+        return f'<td class="exact">{ph}-{pa} <span class="pp">+3</span></td>'
+    if pick["pts"] == 0:
+        return f'<td class="wrong">{ph}-{pa} <span class="pp">0</span></td>'
+    return f'<td class="part">{ph}-{pa} <span class="pp">+{pick["pts"]}</span></td>'
+
+
+def render(scores, ranking, detalle, real_total_goals, problemas):
+    now = datetime.now().strftime("%d/%m/%Y %H:%M")
+    jugados = sum(1 for r in detalle if r["fx"]["status"] == "FT")
+
+    cards = ""
+    for i, p in enumerate(ranking):
+        s = scores[p]
+        cards += f"""
+      <div class="card rank{i+1}">
+        <div class="medal">{MEDALS[i]}</div>
+        <div class="pname">{p}</div>
+        <div class="pts">{s['points']}<span>pts</span></div>
+        <div class="brk">
+          <span title="Marcadores exactos">🎯 {s['exact']} exactos</span>
+          <span title="Aciertos parciales">➕ {s['result']+s['local']+s['visit']} parciales</span>
+          <span title="Sin acertar">❌ {s['wrong']}</span>
+        </div>
+        <div class="brk2">Goles predichos: {s['pred_goals']} · Jugados: {s['played']}</div>
+      </div>"""
+
+    # tabla cronológica
+    filas = ""
+    last_date = None
+    for r in detalle:
+        fx = r["fx"]
+        if fx["date"] != last_date:
+            filas += f'<tr class="daysep"><td colspan="6">{fecha_corta(fx["date"])} de 2026</td></tr>'
+            last_date = fx["date"]
+        if fx["status"] == "FT":
+            real = f'<span class="score">{fx["homeGoals"]}-{fx["awayGoals"]}</span>'
+        else:
+            real = '<span class="vs">vs</span>'
+        gtag = fx["group"].replace("Grupo ", "")
+        filas += (
+            f'<tr><td class="match"><span class="grp">{gtag}</span> '
+            f'{fx["home"]} <b>—</b> {fx["away"]}</td>'
+            f'<td class="real">{real}</td>'
+            + cell_pick(r["picks"]["Adam"]) + cell_pick(r["picks"]["Diego"])
+            + cell_pick(r["picks"]["Fer"]) + cell_pick(r["picks"]["Santiago"])
+            + "</tr>"
+        )
+
+    aviso = ""
+    if problemas:
+        aviso = ('<div class="warn">⚠️ Hay predicciones sin emparejar: '
+                 + "; ".join(problemas[:6]) + "</div>")
+
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiniela Mundial 2026</title>
+<style>
+:root{{--azul:#0d1b2a;--azul2:#1b3a5b;--oro:#c7ae4a;--verde:#1a7d3c;--rojo:#9b2226;--gris:#f2f5f9;}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--gris);color:#23303d;line-height:1.45}}
+.wrap{{max-width:1080px;margin:0 auto;padding:18px}}
+header{{background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;border-radius:16px;padding:26px 22px;text-align:center;box-shadow:0 6px 18px rgba(13,27,42,.25)}}
+header h1{{font-size:1.7rem;letter-spacing:.5px}}
+header .sub{{color:var(--oro);margin-top:6px;font-weight:600}}
+header .upd{{font-size:.8rem;opacity:.8;margin-top:8px}}
+section{{background:#fff;border-radius:14px;padding:18px;margin-top:18px;box-shadow:0 2px 10px rgba(0,0,0,.06)}}
+h2{{color:var(--azul);font-size:1.15rem;border-bottom:3px solid var(--oro);padding-bottom:8px;margin-bottom:14px}}
+.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}}
+.card{{border:1px solid #e6ebf1;border-radius:14px;padding:16px;text-align:center;position:relative;background:#fff}}
+.card.rank1{{border-color:var(--oro);box-shadow:0 0 0 2px var(--oro) inset}}
+.medal{{font-size:1.6rem}}
+.pname{{font-weight:700;font-size:1.2rem;color:var(--azul);margin:2px 0}}
+.pts{{font-size:2.3rem;font-weight:800;color:var(--verde)}}
+.pts span{{font-size:.85rem;color:#7a8794;margin-left:4px;font-weight:600}}
+.brk{{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;font-size:.82rem;margin-top:6px;color:#42525f}}
+.brk2{{font-size:.74rem;color:#8693a0;margin-top:6px}}
+.rules{{background:#fff8e6;border-left:4px solid var(--oro);padding:12px 16px;border-radius:0 10px 10px 0;font-size:.9rem}}
+.rules b{{color:var(--azul)}}
+table{{width:100%;border-collapse:collapse;font-size:.9rem}}
+th,td{{padding:8px 6px;text-align:center;border-bottom:1px solid #eef2f6}}
+th{{background:var(--azul);color:#fff;font-weight:600;position:sticky;top:0}}
+td.match{{text-align:left;font-size:.86rem;white-space:nowrap}}
+.grp{{display:inline-block;background:var(--azul);color:#fff;border-radius:5px;font-size:.68rem;padding:1px 6px;margin-right:5px;font-weight:700}}
+.real .score{{font-weight:800;color:var(--azul);font-size:1.02rem}}
+.real .vs{{color:#aab4be;font-size:.8rem}}
+.daysep td{{background:#eef3f8;color:var(--azul2);font-weight:700;text-align:left;font-size:.82rem;text-transform:uppercase;letter-spacing:.5px}}
+.exact{{background:#e7f6ec;color:var(--verde);font-weight:700}}
+.part{{color:var(--verde)}}
+.wrong{{color:var(--rojo)}}
+.pend{{color:#9aa6b2;font-style:italic}}
+.na{{color:#cbd3db}}
+.pp{{font-size:.7rem;opacity:.8}}
+.tablewrap{{overflow-x:auto}}
+.warn{{background:#fde8e8;border-left:4px solid var(--rojo);padding:10px 14px;border-radius:0 8px 8px 0;font-size:.85rem;margin-bottom:12px}}
+footer{{text-align:center;color:#8693a0;font-size:.78rem;padding:22px 10px}}
+@media(max-width:620px){{header h1{{font-size:1.3rem}}th,td{{padding:6px 3px;font-size:.78rem}}td.match{{white-space:normal}}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>⚽ Quiniela Mundial 2026</h1>
+    <div class="sub">Seguimiento en vivo · {jugados}/72 partidos jugados</div>
+    <div class="upd">Actualizado: {now}</div>
+  </header>
+
+  {aviso}
+
+  <section>
+    <h2>🏆 Tabla de posiciones</h2>
+    <div class="cards">{cards}
+    </div>
+  </section>
+
+  <section>
+    <div class="rules">
+      <b>Puntuación:</b> +1 ganador/empate · +1 goles del local · +1 goles del visitante (máx. 3 por partido).<br>
+      <b>Desempate:</b> 1) más marcadores exactos · 2) más cercano al total de goles del torneo
+      (real acumulado: <b>{real_total_goals}</b>).<br>
+      <b>Premios:</b> 🥇 60% · 🥈 20% · 🥉 10% · Organización 10%
+    </div>
+  </section>
+
+  <section>
+    <h2>📊 Resultados y pronósticos</h2>
+    <div class="tablewrap">
+    <table>
+      <thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead>
+      <tbody>{filas}</tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    Generado automáticamente desde <code>fixtures.json</code> + <code>quiniela_data.json</code>.<br>
+    Los resultados se emparejan por equipos contra el calendario oficial de la FIFA.
+  </footer>
+</div>
+</body>
+</html>"""
+
+
+if __name__ == "__main__":
+    main()

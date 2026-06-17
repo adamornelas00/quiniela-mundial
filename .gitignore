@@ -1,2 +1,6 @@
 *.xlsx
 publicar.command
+.DS_Store
+_verify.py
+_seed_fixtures.py
+__pycache__/
