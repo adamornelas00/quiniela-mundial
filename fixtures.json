@@ -184,9 +184,9 @@
     "date": "2026-06-17",
     "home": "Inglaterra",
     "away": "Croacia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 4,
+    "awayGoals": 2,
+    "status": "FT"
   },
   {
     "group": "Grupo L",
