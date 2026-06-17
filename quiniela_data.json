@@ -1,0 +1,3226 @@
+{
+  "Adam": {
+    "Grupo A": [
+      {
+        "match": 1,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Sudáfrica",
+        "goals2": 1,
+        "winner": "México",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 2,
+        "team1": "México",
+        "goals1": 1,
+        "team2": "Corea del Sur",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 3,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 0,
+        "winner": "México",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Sudáfrica",
+        "goals1": 1,
+        "team2": "Corea del Sur",
+        "goals2": 2,
+        "winner": "Corea del Sur",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Sudáfrica",
+        "goals1": 1,
+        "team2": "Rep. Checa",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Corea del Sur",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 1,
+        "winner": "Corea del Sur",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo B": [
+      {
+        "match": 1,
+        "team1": "Canadá",
+        "goals1": 1,
+        "team2": "Bosnia-Herz.",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "Canadá",
+        "goals1": 2,
+        "team2": "Qatar",
+        "goals2": 0,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "Canadá",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Bosnia-Herz.",
+        "goals1": 2,
+        "team2": "Qatar",
+        "goals2": 1,
+        "winner": "Bosnia-Herz.",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Bosnia-Herz.",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Qatar",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo C": [
+      {
+        "match": 1,
+        "team1": "Brasil",
+        "goals1": 2,
+        "team2": "Marruecos",
+        "goals2": 1,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 2,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Escocia",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 3,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 4,
+        "team1": "Marruecos",
+        "goals1": 2,
+        "team2": "Escocia",
+        "goals2": 0,
+        "winner": "Marruecos",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 5,
+        "team1": "Marruecos",
+        "goals1": 2,
+        "team2": "Haití",
+        "goals2": 1,
+        "winner": "Marruecos",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Escocia",
+        "goals1": 1,
+        "team2": "Haití",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo D": [
+      {
+        "match": 1,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Turquía",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Australia",
+        "goals2": 0,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "EE.UU.",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 4,
+        "team1": "Turquía",
+        "goals1": 2,
+        "team2": "Australia",
+        "goals2": 1,
+        "winner": "Turquía",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 5,
+        "team1": "Turquía",
+        "goals1": 2,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "Turquía",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 6,
+        "team1": "Australia",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-19"
+      }
+    ],
+    "Grupo E": [
+      {
+        "match": 1,
+        "team1": "Alemania",
+        "goals1": 2,
+        "team2": "Costa de Marfil",
+        "goals2": 1,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Alemania",
+        "goals1": 1,
+        "team2": "Ecuador",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Alemania",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Costa de Marfil",
+        "goals1": 1,
+        "team2": "Ecuador",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Costa de Marfil",
+        "goals1": 2,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Costa de Marfil",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Ecuador",
+        "goals1": 2,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Ecuador",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo F": [
+      {
+        "match": 1,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Japón",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Suecia",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Países Bajos",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Japón",
+        "goals1": 2,
+        "team2": "Suecia",
+        "goals2": 1,
+        "winner": "Japón",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Japón",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 1,
+        "winner": "Japón",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Suecia",
+        "goals1": 1,
+        "team2": "Túnez",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo G": [
+      {
+        "match": 1,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Irán",
+        "goals2": 0,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "Bélgica",
+        "goals1": 1,
+        "team2": "Egipto",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "Bélgica",
+        "goals1": 3,
+        "team2": "Nueva Zelanda",
+        "goals2": 0,
+        "winner": "Bélgica",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Irán",
+        "goals1": 1,
+        "team2": "Egipto",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Irán",
+        "goals1": 2,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Irán",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Egipto",
+        "goals1": 2,
+        "team2": "Nueva Zelanda",
+        "goals2": 0,
+        "winner": "Egipto",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo H": [
+      {
+        "match": 1,
+        "team1": "España",
+        "goals1": 3,
+        "team2": "Cabo Verde",
+        "goals2": 0,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "España",
+        "goals1": 2,
+        "team2": "Arabia Saudita",
+        "goals2": 0,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "España",
+        "goals1": 2,
+        "team2": "Uruguay",
+        "goals2": 1,
+        "winner": "España",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Cabo Verde",
+        "goals1": 1,
+        "team2": "Arabia Saudita",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Cabo Verde",
+        "goals1": 0,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Arabia Saudita",
+        "goals1": 1,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo I": [
+      {
+        "match": 1,
+        "team1": "Francia",
+        "goals1": 3,
+        "team2": "Irak",
+        "goals2": 1,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Francia",
+        "goals1": 2,
+        "team2": "Senegal",
+        "goals2": 1,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Francia",
+        "goals1": 1,
+        "team2": "Noruega",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Irak",
+        "goals1": 0,
+        "team2": "Senegal",
+        "goals2": 2,
+        "winner": "Senegal",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Irak",
+        "goals1": 1,
+        "team2": "Noruega",
+        "goals2": 2,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Senegal",
+        "goals1": 2,
+        "team2": "Noruega",
+        "goals2": 1,
+        "winner": "Senegal",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo J": [
+      {
+        "match": 1,
+        "team1": "Argentina",
+        "goals1": 3,
+        "team2": "Argelia",
+        "goals2": 0,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Argentina",
+        "goals1": 2,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Argentina",
+        "goals1": 2,
+        "team2": "Jordania",
+        "goals2": 0,
+        "winner": "Argentina",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Argelia",
+        "goals1": 1,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Argelia",
+        "goals1": 2,
+        "team2": "Jordania",
+        "goals2": 1,
+        "winner": "Argelia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Austria",
+        "goals1": 2,
+        "team2": "Jordania",
+        "goals2": 1,
+        "winner": "Austria",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo K": [
+      {
+        "match": 1,
+        "team1": "Portugal",
+        "goals1": 2,
+        "team2": "RD del Congo",
+        "goals2": 1,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Portugal",
+        "goals1": 3,
+        "team2": "Uzbekistán",
+        "goals2": 0,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Portugal",
+        "goals1": 1,
+        "team2": "Colombia",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "RD del Congo",
+        "goals1": 1,
+        "team2": "Uzbekistán",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "RD del Congo",
+        "goals1": 0,
+        "team2": "Colombia",
+        "goals2": 1,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Uzbekistán",
+        "goals1": 0,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo L": [
+      {
+        "match": 1,
+        "team1": "Inglaterra",
+        "goals1": 2,
+        "team2": "Croacia",
+        "goals2": 1,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Inglaterra",
+        "goals1": 3,
+        "team2": "Ghana",
+        "goals2": 0,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Inglaterra",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 0,
+        "winner": "Inglaterra",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "Croacia",
+        "goals1": 2,
+        "team2": "Ghana",
+        "goals2": 1,
+        "winner": "Croacia",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "Croacia",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 0,
+        "winner": "Croacia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Ghana",
+        "goals1": 1,
+        "team2": "Panamá",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-27"
+      }
+    ],
+    "terceros": [
+      [
+        "Los 8 mejores terceros clasifican · Los 4 peores quedan eliminados",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Grupo",
+        "3° Lugar",
+        "Pts",
+        "GD",
+        "GF",
+        "Clave",
+        "Rank",
+        "Estado"
+      ],
+      [
+        "Grupo A",
+        "Sudáfrica",
+        1,
+        -2,
+        3,
+        1098033,
+        7,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo B",
+        "Bosnia-Herz.",
+        4,
+        0,
+        4,
+        4100043,
+        2,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo C",
+        "Haití",
+        1,
+        -4,
+        2,
+        1096021,
+        12,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo D",
+        "Paraguay",
+        2,
+        -1,
+        3,
+        2099031,
+        6,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo E",
+        "Costa de Marfil",
+        4,
+        1,
+        4,
+        4101043,
+        1,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo F",
+        "Suecia",
+        1,
+        -2,
+        3,
+        1098032,
+        8,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo G",
+        "Irán",
+        4,
+        -1,
+        3,
+        4099033,
+        4,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo H",
+        "Arabia Saudita",
+        1,
+        -3,
+        2,
+        1097022,
+        10,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo I",
+        "Noruega",
+        4,
+        0,
+        4,
+        4100041,
+        3,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo J",
+        "Argelia",
+        4,
+        -2,
+        3,
+        4098033,
+        5,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo K",
+        "RD del Congo",
+        1,
+        -2,
+        2,
+        1098023,
+        9,
+        "❌ Eliminado"
+      ]
+    ]
+  },
+  "Diego": {
+    "Grupo A": [
+      {
+        "match": 1,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Sudáfrica",
+        "goals2": 1,
+        "winner": "México",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 2,
+        "team1": "México",
+        "goals1": 1,
+        "team2": "Corea del Sur",
+        "goals2": 2,
+        "winner": "Corea del Sur",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 3,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 0,
+        "winner": "México",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Sudáfrica",
+        "goals1": 1,
+        "team2": "Corea del Sur",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Sudáfrica",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 1,
+        "winner": "Sudáfrica",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Corea del Sur",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 0,
+        "winner": "Corea del Sur",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo B": [
+      {
+        "match": 1,
+        "team1": "Canadá",
+        "goals1": 3,
+        "team2": "Bosnia-Herz.",
+        "goals2": 1,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "Canadá",
+        "goals1": 2,
+        "team2": "Qatar",
+        "goals2": 1,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "Canadá",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Bosnia-Herz.",
+        "goals1": 2,
+        "team2": "Qatar",
+        "goals2": 2,
+        "winner": "Empate",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Bosnia-Herz.",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 3,
+        "winner": "Suiza",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Qatar",
+        "goals1": 2,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo C": [
+      {
+        "match": 1,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Marruecos",
+        "goals2": 1,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 2,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Escocia",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 3,
+        "team1": "Brasil",
+        "goals1": 4,
+        "team2": "Haití",
+        "goals2": 1,
+        "winner": "Brasil",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 4,
+        "team1": "Marruecos",
+        "goals1": 2,
+        "team2": "Escocia",
+        "goals2": 1,
+        "winner": "Marruecos",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 5,
+        "team1": "Marruecos",
+        "goals1": 2,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Marruecos",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Escocia",
+        "goals1": 1,
+        "team2": "Haití",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo D": [
+      {
+        "match": 1,
+        "team1": "EE.UU.",
+        "goals1": 3,
+        "team2": "Turquía",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Australia",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 4,
+        "team1": "Turquía",
+        "goals1": 1,
+        "team2": "Australia",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 5,
+        "team1": "Turquía",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 2,
+        "winner": "Paraguay",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 6,
+        "team1": "Australia",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-19"
+      }
+    ],
+    "Grupo E": [
+      {
+        "match": 1,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Costa de Marfil",
+        "goals2": 1,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Ecuador",
+        "goals2": 0,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Alemania",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Costa de Marfil",
+        "goals1": 1,
+        "team2": "Ecuador",
+        "goals2": 2,
+        "winner": "Ecuador",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Costa de Marfil",
+        "goals1": 1,
+        "team2": "Curazao",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Ecuador",
+        "goals1": 2,
+        "team2": "Curazao",
+        "goals2": 1,
+        "winner": "Ecuador",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo F": [
+      {
+        "match": 1,
+        "team1": "Países Bajos",
+        "goals1": 3,
+        "team2": "Japón",
+        "goals2": 2,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Suecia",
+        "goals2": 0,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Japón",
+        "goals1": 2,
+        "team2": "Suecia",
+        "goals2": 0,
+        "winner": "Japón",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Japón",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Japón",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Suecia",
+        "goals1": 1,
+        "team2": "Túnez",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo G": [
+      {
+        "match": 1,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Irán",
+        "goals2": 1,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "Bélgica",
+        "goals1": 3,
+        "team2": "Egipto",
+        "goals2": 1,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "Bélgica",
+        "goals1": 3,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Bélgica",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Irán",
+        "goals1": 2,
+        "team2": "Egipto",
+        "goals2": 3,
+        "winner": "Egipto",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Irán",
+        "goals1": 1,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Egipto",
+        "goals1": 1,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo H": [
+      {
+        "match": 1,
+        "team1": "España",
+        "goals1": 3,
+        "team2": "Cabo Verde",
+        "goals2": 1,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "España",
+        "goals1": 3,
+        "team2": "Arabia Saudita",
+        "goals2": 1,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "España",
+        "goals1": 3,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "España",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Cabo Verde",
+        "goals1": 2,
+        "team2": "Arabia Saudita",
+        "goals2": 2,
+        "winner": "Empate",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Cabo Verde",
+        "goals1": 2,
+        "team2": "Uruguay",
+        "goals2": 3,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Arabia Saudita",
+        "goals1": 1,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo J": [
+      {
+        "match": 1,
+        "team1": "Argentina",
+        "goals1": 4,
+        "team2": "Argelia",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Argentina",
+        "goals1": 3,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Argentina",
+        "goals1": 4,
+        "team2": "Jordania",
+        "goals2": 0,
+        "winner": "Argentina",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Argelia",
+        "goals1": 1,
+        "team2": "Austria",
+        "goals2": 2,
+        "winner": "Austria",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Argelia",
+        "goals1": 1,
+        "team2": "Jordania",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Austria",
+        "goals1": 1,
+        "team2": "Jordania",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo I": [
+      {
+        "match": 1,
+        "team1": "Francia",
+        "goals1": 4,
+        "team2": "Irak",
+        "goals2": 0,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Francia",
+        "goals1": 3,
+        "team2": "Senegal",
+        "goals2": 0,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Francia",
+        "goals1": 3,
+        "team2": "Noruega",
+        "goals2": 1,
+        "winner": "Francia",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Irak",
+        "goals1": 1,
+        "team2": "Senegal",
+        "goals2": 2,
+        "winner": "Senegal",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Irak",
+        "goals1": 0,
+        "team2": "Noruega",
+        "goals2": 3,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Senegal",
+        "goals1": 1,
+        "team2": "Noruega",
+        "goals2": 3,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo K": [
+      {
+        "match": 1,
+        "team1": "Portugal",
+        "goals1": 4,
+        "team2": "RD del Congo",
+        "goals2": 1,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Portugal",
+        "goals1": 4,
+        "team2": "Uzbekistán",
+        "goals2": 0,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Portugal",
+        "goals1": 4,
+        "team2": "Colombia",
+        "goals2": 1,
+        "winner": "Portugal",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "RD del Congo",
+        "goals1": 2,
+        "team2": "Uzbekistán",
+        "goals2": 2,
+        "winner": "Empate",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "RD del Congo",
+        "goals1": 2,
+        "team2": "Colombia",
+        "goals2": 3,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Uzbekistán",
+        "goals1": 1,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo L": [
+      {
+        "match": 1,
+        "team1": "Inglaterra",
+        "goals1": 4,
+        "team2": "Croacia",
+        "goals2": 2,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Inglaterra",
+        "goals1": 4,
+        "team2": "Ghana",
+        "goals2": 1,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Inglaterra",
+        "goals1": 3,
+        "team2": "Panamá",
+        "goals2": 0,
+        "winner": "Inglaterra",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "Croacia",
+        "goals1": 3,
+        "team2": "Ghana",
+        "goals2": 1,
+        "winner": "Croacia",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "Croacia",
+        "goals1": 3,
+        "team2": "Panamá",
+        "goals2": 0,
+        "winner": "Croacia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Ghana",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 2,
+        "winner": "Empate",
+        "date": "2026-06-27"
+      }
+    ],
+    "terceros": [
+      [
+        "Los 8 mejores terceros clasifican · Los 4 peores quedan eliminados",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Grupo",
+        "3° Lugar",
+        "Pts",
+        "GD",
+        "GF",
+        "Clave",
+        "Rank",
+        "Estado"
+      ],
+      [
+        "Grupo A",
+        "Sudáfrica",
+        4,
+        0,
+        4,
+        4100043,
+        1,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo B",
+        "Qatar",
+        2,
+        -1,
+        5,
+        2099052,
+        3,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo C",
+        "Escocia",
+        1,
+        -4,
+        2,
+        1096022,
+        11,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo D",
+        "Australia",
+        2,
+        -1,
+        3,
+        2099032,
+        4,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo E",
+        "Costa de Marfil",
+        1,
+        -3,
+        3,
+        1097033,
+        8,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo F",
+        "Túnez",
+        1,
+        -3,
+        2,
+        1097021,
+        9,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo G",
+        "Nueva Zelanda",
+        2,
+        -2,
+        3,
+        2098031,
+        5,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo H",
+        "Cabo Verde",
+        1,
+        -3,
+        5,
+        1097053,
+        7,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo I",
+        "Senegal",
+        3,
+        -4,
+        3,
+        3096032,
+        2,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo J",
+        "Jordania",
+        2,
+        -4,
+        2,
+        2096021,
+        6,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo K",
+        "RD del Congo",
+        1,
+        -4,
+        5,
+        1096053,
+        10,
+        "❌ Eliminado"
+      ]
+    ]
+  },
+  "Fer": {
+    "Grupo A": [
+      {
+        "match": 1,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Sudáfrica",
+        "goals2": 1,
+        "winner": "México",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 2,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Corea del Sur",
+        "goals2": 1,
+        "winner": "México",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 3,
+        "team1": "México",
+        "goals1": 3,
+        "team2": "Rep. Checa",
+        "goals2": 0,
+        "winner": "México",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Sudáfrica",
+        "goals1": 1,
+        "team2": "Corea del Sur",
+        "goals2": 2,
+        "winner": "Corea del Sur",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Sudáfrica",
+        "goals1": 1,
+        "team2": "Rep. Checa",
+        "goals2": 2,
+        "winner": "Rep. Checa",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Corea del Sur",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 1,
+        "winner": "Corea del Sur",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo B": [
+      {
+        "match": 1,
+        "team1": "Canadá",
+        "goals1": 2,
+        "team2": "Bosnia-Herz.",
+        "goals2": 1,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "Canadá",
+        "goals1": 3,
+        "team2": "Qatar",
+        "goals2": 0,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "Canadá",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Bosnia-Herz.",
+        "goals1": 0,
+        "team2": "Qatar",
+        "goals2": 0,
+        "winner": "Empate",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Bosnia-Herz.",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Qatar",
+        "goals1": 0,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo C": [
+      {
+        "match": 1,
+        "team1": "Brasil",
+        "goals1": 2,
+        "team2": "Marruecos",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 2,
+        "team1": "Brasil",
+        "goals1": 2,
+        "team2": "Escocia",
+        "goals2": 1,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 3,
+        "team1": "Brasil",
+        "goals1": 4,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 4,
+        "team1": "Marruecos",
+        "goals1": 2,
+        "team2": "Escocia",
+        "goals2": 1,
+        "winner": "Marruecos",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 5,
+        "team1": "Marruecos",
+        "goals1": 3,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Marruecos",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Escocia",
+        "goals1": 2,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Escocia",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo D": [
+      {
+        "match": 1,
+        "team1": "EE.UU.",
+        "goals1": 1,
+        "team2": "Turquía",
+        "goals2": 2,
+        "winner": "Turquía",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Australia",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Paraguay",
+        "goals2": 0,
+        "winner": "EE.UU.",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 4,
+        "team1": "Turquía",
+        "goals1": 2,
+        "team2": "Australia",
+        "goals2": 1,
+        "winner": "Turquía",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 5,
+        "team1": "Turquía",
+        "goals1": 2,
+        "team2": "Paraguay",
+        "goals2": 0,
+        "winner": "Turquía",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 6,
+        "team1": "Australia",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-19"
+      }
+    ],
+    "Grupo E": [
+      {
+        "match": 1,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Costa de Marfil",
+        "goals2": 1,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Alemania",
+        "goals1": 2,
+        "team2": "Ecuador",
+        "goals2": 1,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Alemania",
+        "goals1": 4,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Alemania",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Costa de Marfil",
+        "goals1": 1,
+        "team2": "Ecuador",
+        "goals2": 2,
+        "winner": "Ecuador",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Costa de Marfil",
+        "goals1": 2,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Costa de Marfil",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Ecuador",
+        "goals1": 2,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Ecuador",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo F": [
+      {
+        "match": 1,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Japón",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Suecia",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Países Bajos",
+        "goals1": 3,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Países Bajos",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Japón",
+        "goals1": 1,
+        "team2": "Suecia",
+        "goals2": 2,
+        "winner": "Suecia",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Japón",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Japón",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Suecia",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Suecia",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo G": [
+      {
+        "match": 1,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Irán",
+        "goals2": 1,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Egipto",
+        "goals2": 0,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "Bélgica",
+        "goals1": 3,
+        "team2": "Nueva Zelanda",
+        "goals2": 0,
+        "winner": "Bélgica",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Irán",
+        "goals1": 1,
+        "team2": "Egipto",
+        "goals2": 2,
+        "winner": "Egipto",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Irán",
+        "goals1": 1,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Egipto",
+        "goals1": 2,
+        "team2": "Nueva Zelanda",
+        "goals2": 0,
+        "winner": "Egipto",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo H": [
+      {
+        "match": 1,
+        "team1": "España",
+        "goals1": 3,
+        "team2": "Cabo Verde",
+        "goals2": 0,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "España",
+        "goals1": 2,
+        "team2": "Arabia Saudita",
+        "goals2": 0,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "España",
+        "goals1": 1,
+        "team2": "Uruguay",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Cabo Verde",
+        "goals1": 0,
+        "team2": "Arabia Saudita",
+        "goals2": 2,
+        "winner": "Arabia Saudita",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Cabo Verde",
+        "goals1": 0,
+        "team2": "Uruguay",
+        "goals2": 3,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Arabia Saudita",
+        "goals1": 1,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo I": [
+      {
+        "match": 1,
+        "team1": "Francia",
+        "goals1": 4,
+        "team2": "Irak",
+        "goals2": 0,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Francia",
+        "goals1": 2,
+        "team2": "Senegal",
+        "goals2": 0,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Francia",
+        "goals1": 2,
+        "team2": "Noruega",
+        "goals2": 1,
+        "winner": "Francia",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Irak",
+        "goals1": 0,
+        "team2": "Senegal",
+        "goals2": 1,
+        "winner": "Senegal",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Irak",
+        "goals1": 0,
+        "team2": "Noruega",
+        "goals2": 3,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Senegal",
+        "goals1": 1,
+        "team2": "Noruega",
+        "goals2": 2,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo J": [
+      {
+        "match": 1,
+        "team1": "Argentina",
+        "goals1": 2,
+        "team2": "Argelia",
+        "goals2": 0,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Argentina",
+        "goals1": 3,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Argentina",
+        "goals1": 3,
+        "team2": "Jordania",
+        "goals2": 0,
+        "winner": "Argentina",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Argelia",
+        "goals1": 1,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Argelia",
+        "goals1": 1,
+        "team2": "Jordania",
+        "goals2": 0,
+        "winner": "Argelia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Austria",
+        "goals1": 2,
+        "team2": "Jordania",
+        "goals2": 0,
+        "winner": "Austria",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo K": [
+      {
+        "match": 1,
+        "team1": "Portugal",
+        "goals1": 2,
+        "team2": "RD del Congo",
+        "goals2": 0,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Portugal",
+        "goals1": 3,
+        "team2": "Uzbekistán",
+        "goals2": 0,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Portugal",
+        "goals1": 3,
+        "team2": "Colombia",
+        "goals2": 1,
+        "winner": "Portugal",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "RD del Congo",
+        "goals1": 1,
+        "team2": "Uzbekistán",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "RD del Congo",
+        "goals1": 0,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Uzbekistán",
+        "goals1": 1,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo L": [
+      {
+        "match": 1,
+        "team1": "Inglaterra",
+        "goals1": 2,
+        "team2": "Croacia",
+        "goals2": 0,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Inglaterra",
+        "goals1": 3,
+        "team2": "Ghana",
+        "goals2": 0,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Inglaterra",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 1,
+        "winner": "Inglaterra",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "Croacia",
+        "goals1": 1,
+        "team2": "Ghana",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "Croacia",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 0,
+        "winner": "Croacia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Ghana",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 0,
+        "winner": "Ghana",
+        "date": "2026-06-27"
+      }
+    ],
+    "terceros": [
+      [
+        "Los 8 mejores terceros clasifican · Los 4 peores quedan eliminados",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Grupo",
+        "3° Lugar",
+        "Pts",
+        "GD",
+        "GF",
+        "Clave",
+        "Rank",
+        "Estado"
+      ],
+      [
+        "Grupo A",
+        "Rep. Checa",
+        3,
+        -3,
+        3,
+        3097031,
+        8,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo B",
+        "Bosnia-Herz.",
+        1,
+        -2,
+        2,
+        1098023,
+        11,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo C",
+        "Escocia",
+        3,
+        0,
+        4,
+        3100042,
+        4,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo D",
+        "Australia",
+        1,
+        -2,
+        3,
+        1098032,
+        10,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo E",
+        "Costa de Marfil",
+        3,
+        -1,
+        4,
+        3099043,
+        5,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo F",
+        "Japón",
+        3,
+        0,
+        4,
+        3100043,
+        3,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo G",
+        "Irán",
+        1,
+        -2,
+        3,
+        1098033,
+        9,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo H",
+        "Arabia Saudita",
+        3,
+        -1,
+        3,
+        3099032,
+        6,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo I",
+        "Senegal",
+        3,
+        -2,
+        2,
+        3098022,
+        7,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo J",
+        "Argelia",
+        4,
+        -1,
+        2,
+        4099023,
+        2,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo K",
+        "Uzbekistán",
+        1,
+        -4,
+        2,
+        1096022,
+        12,
+        "❌ Eliminado"
+      ]
+    ]
+  },
+  "Santiago": {
+    "Grupo A": [
+      {
+        "match": 1,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Sudáfrica",
+        "goals2": 1,
+        "winner": "México",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 2,
+        "team1": "México",
+        "goals1": 3,
+        "team2": "Corea del Sur",
+        "goals2": 1,
+        "winner": "México",
+        "date": "2026-06-11"
+      },
+      {
+        "match": 3,
+        "team1": "México",
+        "goals1": 2,
+        "team2": "Rep. Checa",
+        "goals2": 0,
+        "winner": "México",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Sudáfrica",
+        "goals1": 2,
+        "team2": "Corea del Sur",
+        "goals2": 1,
+        "winner": "Sudáfrica",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Sudáfrica",
+        "goals1": 1,
+        "team2": "Rep. Checa",
+        "goals2": 0,
+        "winner": "Sudáfrica",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Corea del Sur",
+        "goals1": 1,
+        "team2": "Rep. Checa",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo B": [
+      {
+        "match": 1,
+        "team1": "Canadá",
+        "goals1": 2,
+        "team2": "Bosnia-Herz.",
+        "goals2": 0,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "Canadá",
+        "goals1": 2,
+        "team2": "Qatar",
+        "goals2": 1,
+        "winner": "Canadá",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "Canadá",
+        "goals1": 2,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Empate",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 4,
+        "team1": "Bosnia-Herz.",
+        "goals1": 0,
+        "team2": "Qatar",
+        "goals2": 0,
+        "winner": "Empate",
+        "date": "2026-06-18"
+      },
+      {
+        "match": 5,
+        "team1": "Bosnia-Herz.",
+        "goals1": 0,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Qatar",
+        "goals1": 1,
+        "team2": "Suiza",
+        "goals2": 2,
+        "winner": "Suiza",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo C": [
+      {
+        "match": 1,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Marruecos",
+        "goals2": 1,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 2,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Escocia",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 3,
+        "team1": "Brasil",
+        "goals1": 3,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Brasil",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 4,
+        "team1": "Marruecos",
+        "goals1": 1,
+        "team2": "Escocia",
+        "goals2": 0,
+        "winner": "Marruecos",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 5,
+        "team1": "Marruecos",
+        "goals1": 1,
+        "team2": "Haití",
+        "goals2": 0,
+        "winner": "Marruecos",
+        "date": "2026-06-24"
+      },
+      {
+        "match": 6,
+        "team1": "Escocia",
+        "goals1": 1,
+        "team2": "Haití",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-24"
+      }
+    ],
+    "Grupo D": [
+      {
+        "match": 1,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Turquía",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 2,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Australia",
+        "goals2": 0,
+        "winner": "EE.UU.",
+        "date": "2026-06-12"
+      },
+      {
+        "match": 3,
+        "team1": "EE.UU.",
+        "goals1": 2,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "EE.UU.",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 4,
+        "team1": "Turquía",
+        "goals1": 1,
+        "team2": "Australia",
+        "goals2": 0,
+        "winner": "Turquía",
+        "date": "2026-06-13"
+      },
+      {
+        "match": 5,
+        "team1": "Turquía",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 0,
+        "winner": "Turquía",
+        "date": "2026-06-19"
+      },
+      {
+        "match": 6,
+        "team1": "Australia",
+        "goals1": 1,
+        "team2": "Paraguay",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-19"
+      }
+    ],
+    "Grupo E": [
+      {
+        "match": 1,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Costa de Marfil",
+        "goals2": 0,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Alemania",
+        "goals1": 2,
+        "team2": "Ecuador",
+        "goals2": 0,
+        "winner": "Alemania",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Alemania",
+        "goals1": 3,
+        "team2": "Curazao",
+        "goals2": 1,
+        "winner": "Alemania",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Costa de Marfil",
+        "goals1": 0,
+        "team2": "Ecuador",
+        "goals2": 1,
+        "winner": "Ecuador",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Costa de Marfil",
+        "goals1": 0,
+        "team2": "Curazao",
+        "goals2": 1,
+        "winner": "Curazao",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Ecuador",
+        "goals1": 1,
+        "team2": "Curazao",
+        "goals2": 0,
+        "winner": "Ecuador",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo F": [
+      {
+        "match": 1,
+        "team1": "Países Bajos",
+        "goals1": 3,
+        "team2": "Japón",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 2,
+        "team1": "Países Bajos",
+        "goals1": 3,
+        "team2": "Suecia",
+        "goals2": 1,
+        "winner": "Países Bajos",
+        "date": "2026-06-14"
+      },
+      {
+        "match": 3,
+        "team1": "Países Bajos",
+        "goals1": 2,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Países Bajos",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 4,
+        "team1": "Japón",
+        "goals1": 1,
+        "team2": "Suecia",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-20"
+      },
+      {
+        "match": 5,
+        "team1": "Japón",
+        "goals1": 1,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Japón",
+        "date": "2026-06-25"
+      },
+      {
+        "match": 6,
+        "team1": "Suecia",
+        "goals1": 1,
+        "team2": "Túnez",
+        "goals2": 0,
+        "winner": "Suecia",
+        "date": "2026-06-25"
+      }
+    ],
+    "Grupo G": [
+      {
+        "match": 1,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Irán",
+        "goals2": 0,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Egipto",
+        "goals2": 1,
+        "winner": "Bélgica",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "Bélgica",
+        "goals1": 2,
+        "team2": "Nueva Zelanda",
+        "goals2": 0,
+        "winner": "Bélgica",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Irán",
+        "goals1": 1,
+        "team2": "Egipto",
+        "goals2": 2,
+        "winner": "Egipto",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Irán",
+        "goals1": 1,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Egipto",
+        "goals1": 2,
+        "team2": "Nueva Zelanda",
+        "goals2": 1,
+        "winner": "Egipto",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo H": [
+      {
+        "match": 1,
+        "team1": "España",
+        "goals1": 4,
+        "team2": "Cabo Verde",
+        "goals2": 0,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 2,
+        "team1": "España",
+        "goals1": 4,
+        "team2": "Arabia Saudita",
+        "goals2": 1,
+        "winner": "España",
+        "date": "2026-06-15"
+      },
+      {
+        "match": 3,
+        "team1": "España",
+        "goals1": 2,
+        "team2": "Uruguay",
+        "goals2": 1,
+        "winner": "España",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 4,
+        "team1": "Cabo Verde",
+        "goals1": 0,
+        "team2": "Arabia Saudita",
+        "goals2": 1,
+        "winner": "Arabia Saudita",
+        "date": "2026-06-21"
+      },
+      {
+        "match": 5,
+        "team1": "Cabo Verde",
+        "goals1": 0,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Arabia Saudita",
+        "goals1": 1,
+        "team2": "Uruguay",
+        "goals2": 2,
+        "winner": "Uruguay",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo I": [
+      {
+        "match": 1,
+        "team1": "Francia",
+        "goals1": 5,
+        "team2": "Irak",
+        "goals2": 0,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Francia",
+        "goals1": 4,
+        "team2": "Senegal",
+        "goals2": 0,
+        "winner": "Francia",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Francia",
+        "goals1": 3,
+        "team2": "Noruega",
+        "goals2": 1,
+        "winner": "Francia",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Irak",
+        "goals1": 0,
+        "team2": "Senegal",
+        "goals2": 1,
+        "winner": "Senegal",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Irak",
+        "goals1": 0,
+        "team2": "Noruega",
+        "goals2": 2,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      },
+      {
+        "match": 6,
+        "team1": "Senegal",
+        "goals1": 1,
+        "team2": "Noruega",
+        "goals2": 2,
+        "winner": "Noruega",
+        "date": "2026-06-26"
+      }
+    ],
+    "Grupo J": [
+      {
+        "match": 1,
+        "team1": "Argentina",
+        "goals1": 6,
+        "team2": "Argelia",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 2,
+        "team1": "Argentina",
+        "goals1": 3,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-16"
+      },
+      {
+        "match": 3,
+        "team1": "Argentina",
+        "goals1": 4,
+        "team2": "Jordania",
+        "goals2": 1,
+        "winner": "Argentina",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 4,
+        "team1": "Argelia",
+        "goals1": 0,
+        "team2": "Austria",
+        "goals2": 1,
+        "winner": "Austria",
+        "date": "2026-06-22"
+      },
+      {
+        "match": 5,
+        "team1": "Argelia",
+        "goals1": 1,
+        "team2": "Jordania",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Austria",
+        "goals1": 1,
+        "team2": "Jordania",
+        "goals2": 0,
+        "winner": "Austria",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo K": [
+      {
+        "match": 1,
+        "team1": "Portugal",
+        "goals1": 3,
+        "team2": "RD del Congo",
+        "goals2": 0,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Portugal",
+        "goals1": 3,
+        "team2": "Uzbekistán",
+        "goals2": 0,
+        "winner": "Portugal",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Portugal",
+        "goals1": 3,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Portugal",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "RD del Congo",
+        "goals1": 1,
+        "team2": "Uzbekistán",
+        "goals2": 1,
+        "winner": "Empate",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "RD del Congo",
+        "goals1": 0,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Uzbekistán",
+        "goals1": 0,
+        "team2": "Colombia",
+        "goals2": 2,
+        "winner": "Colombia",
+        "date": "2026-06-27"
+      }
+    ],
+    "Grupo L": [
+      {
+        "match": 1,
+        "team1": "Inglaterra",
+        "goals1": 3,
+        "team2": "Croacia",
+        "goals2": 1,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 2,
+        "team1": "Inglaterra",
+        "goals1": 4,
+        "team2": "Ghana",
+        "goals2": 1,
+        "winner": "Inglaterra",
+        "date": "2026-06-17"
+      },
+      {
+        "match": 3,
+        "team1": "Inglaterra",
+        "goals1": 3,
+        "team2": "Panamá",
+        "goals2": 1,
+        "winner": "Inglaterra",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 4,
+        "team1": "Croacia",
+        "goals1": 2,
+        "team2": "Ghana",
+        "goals2": 0,
+        "winner": "Croacia",
+        "date": "2026-06-23"
+      },
+      {
+        "match": 5,
+        "team1": "Croacia",
+        "goals1": 2,
+        "team2": "Panamá",
+        "goals2": 1,
+        "winner": "Croacia",
+        "date": "2026-06-27"
+      },
+      {
+        "match": 6,
+        "team1": "Ghana",
+        "goals1": 0,
+        "team2": "Panamá",
+        "goals2": 1,
+        "winner": "Panamá",
+        "date": "2026-06-27"
+      }
+    ],
+    "terceros": [
+      [
+        "Los 8 mejores terceros clasifican · Los 4 peores quedan eliminados",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Grupo",
+        "3° Lugar",
+        "Pts",
+        "GD",
+        "GF",
+        "Clave",
+        "Rank",
+        "Estado"
+      ],
+      [
+        "Grupo A",
+        "Corea del Sur",
+        1,
+        -3,
+        3,
+        1097032,
+        8,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo B",
+        "Qatar",
+        1,
+        -2,
+        2,
+        1098022,
+        6,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo C",
+        "Escocia",
+        1,
+        -4,
+        1,
+        1096012,
+        11,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo D",
+        "Paraguay",
+        1,
+        -2,
+        2,
+        1098021,
+        7,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo E",
+        "Curazao",
+        3,
+        -2,
+        2,
+        3098021,
+        3,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo F",
+        "Suecia",
+        4,
+        -1,
+        3,
+        4099032,
+        1,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo G",
+        "Irán",
+        1,
+        -3,
+        2,
+        1097023,
+        9,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo H",
+        "Arabia Saudita",
+        3,
+        -3,
+        3,
+        3097032,
+        4,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo I",
+        "Senegal",
+        3,
+        -4,
+        2,
+        3096022,
+        5,
+        "✅ Clasifica"
+      ],
+      [
+        "Grupo J",
+        "Jordania",
+        1,
+        -4,
+        2,
+        1096021,
+        10,
+        "❌ Eliminado"
+      ],
+      [
+        "Grupo K",
+        "RD del Congo",
+        1,
+        -5,
+        1,
+        1095013,
+        12,
+        "❌ Eliminado"
+      ]
+    ]
+  }
+}

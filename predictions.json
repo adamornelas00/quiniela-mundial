@@ -1,0 +1,2314 @@
+{
+  "Adam": [
+    {
+      "num": 1,
+      "team1": "M\u00e9xico",
+      "team2": "Sud\u00e1frica",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 2,
+      "team1": "M\u00e9xico",
+      "team2": "Corea del Sur",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 3,
+      "team1": "M\u00e9xico",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 4,
+      "team1": "Sud\u00e1frica",
+      "team2": "Corea del Sur",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 5,
+      "team1": "Sud\u00e1frica",
+      "team2": "Rep. Checa",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 6,
+      "team1": "Corea del Sur",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 1,
+      "team1": "Canad\u00e1",
+      "team2": "Bosnia-Herz.",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 2,
+      "team1": "Canad\u00e1",
+      "team2": "Qatar",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 3,
+      "team1": "Canad\u00e1",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 4,
+      "team1": "Bosnia-Herz.",
+      "team2": "Qatar",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 5,
+      "team1": "Bosnia-Herz.",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 6,
+      "team1": "Qatar",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 1,
+      "team1": "Brasil",
+      "team2": "Marruecos",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 2,
+      "team1": "Brasil",
+      "team2": "Escocia",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 3,
+      "team1": "Brasil",
+      "team2": "Hait\u00ed",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 4,
+      "team1": "Marruecos",
+      "team2": "Escocia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 5,
+      "team1": "Marruecos",
+      "team2": "Hait\u00ed",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 6,
+      "team1": "Escocia",
+      "team2": "Hait\u00ed",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 1,
+      "team1": "Estados Unidos",
+      "team2": "Turqu\u00eda",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 2,
+      "team1": "Estados Unidos",
+      "team2": "Australia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 3,
+      "team1": "Estados Unidos",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 4,
+      "team1": "Turqu\u00eda",
+      "team2": "Australia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 5,
+      "team1": "Turqu\u00eda",
+      "team2": "Paraguay",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 6,
+      "team1": "Australia",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 1,
+      "team1": "Alemania",
+      "team2": "Costa de Marfil",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 2,
+      "team1": "Alemania",
+      "team2": "Ecuador",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 3,
+      "team1": "Alemania",
+      "team2": "Curazao",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 4,
+      "team1": "Costa de Marfil",
+      "team2": "Ecuador",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 5,
+      "team1": "Costa de Marfil",
+      "team2": "Curazao",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 6,
+      "team1": "Ecuador",
+      "team2": "Curazao",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 1,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Jap\u00f3n",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 2,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Suecia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 3,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 4,
+      "team1": "Jap\u00f3n",
+      "team2": "Suecia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 5,
+      "team1": "Jap\u00f3n",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 6,
+      "team1": "Suecia",
+      "team2": "T\u00fanez",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 1,
+      "team1": "B\u00e9lgica",
+      "team2": "Ir\u00e1n",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 2,
+      "team1": "B\u00e9lgica",
+      "team2": "Egipto",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 3,
+      "team1": "B\u00e9lgica",
+      "team2": "Nueva Zelanda",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 4,
+      "team1": "Ir\u00e1n",
+      "team2": "Egipto",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 5,
+      "team1": "Ir\u00e1n",
+      "team2": "Nueva Zelanda",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 6,
+      "team1": "Egipto",
+      "team2": "Nueva Zelanda",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 1,
+      "team1": "Espa\u00f1a",
+      "team2": "Cabo Verde",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 2,
+      "team1": "Espa\u00f1a",
+      "team2": "Arabia Saudita",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 3,
+      "team1": "Espa\u00f1a",
+      "team2": "Uruguay",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 4,
+      "team1": "Cabo Verde",
+      "team2": "Arabia Saudita",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 5,
+      "team1": "Cabo Verde",
+      "team2": "Uruguay",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 6,
+      "team1": "Arabia Saudita",
+      "team2": "Uruguay",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 1,
+      "team1": "Francia",
+      "team2": "Irak",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 2,
+      "team1": "Francia",
+      "team2": "Senegal",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 3,
+      "team1": "Francia",
+      "team2": "Noruega",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 4,
+      "team1": "Irak",
+      "team2": "Senegal",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 5,
+      "team1": "Irak",
+      "team2": "Noruega",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 6,
+      "team1": "Senegal",
+      "team2": "Noruega",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 1,
+      "team1": "Argentina",
+      "team2": "Argelia",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 2,
+      "team1": "Argentina",
+      "team2": "Austria",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 3,
+      "team1": "Argentina",
+      "team2": "Jordania",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 4,
+      "team1": "Argelia",
+      "team2": "Austria",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 5,
+      "team1": "Argelia",
+      "team2": "Jordania",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 6,
+      "team1": "Austria",
+      "team2": "Jordania",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 1,
+      "team1": "Portugal",
+      "team2": "RD del Congo",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 2,
+      "team1": "Portugal",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 3,
+      "team1": "Portugal",
+      "team2": "Colombia",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 4,
+      "team1": "RD del Congo",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 5,
+      "team1": "RD del Congo",
+      "team2": "Colombia",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 6,
+      "team1": "Uzbekist\u00e1n",
+      "team2": "Colombia",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 1,
+      "team1": "Inglaterra",
+      "team2": "Croacia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 2,
+      "team1": "Inglaterra",
+      "team2": "Ghana",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 3,
+      "team1": "Inglaterra",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 4,
+      "team1": "Croacia",
+      "team2": "Ghana",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 5,
+      "team1": "Croacia",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 6,
+      "team1": "Ghana",
+      "team2": "Panam\u00e1",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    }
+  ],
+  "Diego": [
+    {
+      "num": 1,
+      "team1": "M\u00e9xico",
+      "team2": "Sud\u00e1frica",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 2,
+      "team1": "M\u00e9xico",
+      "team2": "Corea del Sur",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 3,
+      "team1": "M\u00e9xico",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 4,
+      "team1": "Sud\u00e1frica",
+      "team2": "Corea del Sur",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 5,
+      "team1": "Sud\u00e1frica",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 6,
+      "team1": "Corea del Sur",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 1,
+      "team1": "Canad\u00e1",
+      "team2": "Bosnia-Herz.",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 2,
+      "team1": "Canad\u00e1",
+      "team2": "Qatar",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 3,
+      "team1": "Canad\u00e1",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 4,
+      "team1": "Bosnia-Herz.",
+      "team2": "Qatar",
+      "goals1": 2,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 5,
+      "team1": "Bosnia-Herz.",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 3,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 6,
+      "team1": "Qatar",
+      "team2": "Suiza",
+      "goals1": 2,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 1,
+      "team1": "Brasil",
+      "team2": "Marruecos",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 2,
+      "team1": "Brasil",
+      "team2": "Escocia",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 3,
+      "team1": "Brasil",
+      "team2": "Hait\u00ed",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 4,
+      "team1": "Marruecos",
+      "team2": "Escocia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 5,
+      "team1": "Marruecos",
+      "team2": "Hait\u00ed",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 6,
+      "team1": "Escocia",
+      "team2": "Hait\u00ed",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 1,
+      "team1": "Estados Unidos",
+      "team2": "Turqu\u00eda",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 2,
+      "team1": "Estados Unidos",
+      "team2": "Australia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 3,
+      "team1": "Estados Unidos",
+      "team2": "Paraguay",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 4,
+      "team1": "Turqu\u00eda",
+      "team2": "Australia",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 5,
+      "team1": "Turqu\u00eda",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 6,
+      "team1": "Australia",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 1,
+      "team1": "Alemania",
+      "team2": "Costa de Marfil",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 2,
+      "team1": "Alemania",
+      "team2": "Ecuador",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 3,
+      "team1": "Alemania",
+      "team2": "Curazao",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 4,
+      "team1": "Costa de Marfil",
+      "team2": "Ecuador",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 5,
+      "team1": "Costa de Marfil",
+      "team2": "Curazao",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 6,
+      "team1": "Ecuador",
+      "team2": "Curazao",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 1,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Jap\u00f3n",
+      "goals1": 3,
+      "goals2": 2,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 2,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Suecia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 3,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 4,
+      "team1": "Jap\u00f3n",
+      "team2": "Suecia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 5,
+      "team1": "Jap\u00f3n",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 6,
+      "team1": "Suecia",
+      "team2": "T\u00fanez",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 1,
+      "team1": "B\u00e9lgica",
+      "team2": "Ir\u00e1n",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 2,
+      "team1": "B\u00e9lgica",
+      "team2": "Egipto",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 3,
+      "team1": "B\u00e9lgica",
+      "team2": "Nueva Zelanda",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 4,
+      "team1": "Ir\u00e1n",
+      "team2": "Egipto",
+      "goals1": 2,
+      "goals2": 3,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 5,
+      "team1": "Ir\u00e1n",
+      "team2": "Nueva Zelanda",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 6,
+      "team1": "Egipto",
+      "team2": "Nueva Zelanda",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 1,
+      "team1": "Espa\u00f1a",
+      "team2": "Cabo Verde",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 2,
+      "team1": "Espa\u00f1a",
+      "team2": "Arabia Saudita",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 3,
+      "team1": "Espa\u00f1a",
+      "team2": "Uruguay",
+      "goals1": 3,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 4,
+      "team1": "Cabo Verde",
+      "team2": "Arabia Saudita",
+      "goals1": 2,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 5,
+      "team1": "Cabo Verde",
+      "team2": "Uruguay",
+      "goals1": 2,
+      "goals2": 3,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 6,
+      "team1": "Arabia Saudita",
+      "team2": "Uruguay",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 1,
+      "team1": "Argentina",
+      "team2": "Argelia",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 2,
+      "team1": "Argentina",
+      "team2": "Austria",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 3,
+      "team1": "Argentina",
+      "team2": "Jordania",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 4,
+      "team1": "Argelia",
+      "team2": "Austria",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 5,
+      "team1": "Argelia",
+      "team2": "Jordania",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 6,
+      "team1": "Austria",
+      "team2": "Jordania",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 1,
+      "team1": "Francia",
+      "team2": "Irak",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 2,
+      "team1": "Francia",
+      "team2": "Senegal",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 3,
+      "team1": "Francia",
+      "team2": "Noruega",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 4,
+      "team1": "Irak",
+      "team2": "Senegal",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 5,
+      "team1": "Irak",
+      "team2": "Noruega",
+      "goals1": 0,
+      "goals2": 3,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 6,
+      "team1": "Senegal",
+      "team2": "Noruega",
+      "goals1": 1,
+      "goals2": 3,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 1,
+      "team1": "Portugal",
+      "team2": "RD del Congo",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 2,
+      "team1": "Portugal",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 3,
+      "team1": "Portugal",
+      "team2": "Colombia",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 4,
+      "team1": "RD del Congo",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 2,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 5,
+      "team1": "RD del Congo",
+      "team2": "Colombia",
+      "goals1": 2,
+      "goals2": 3,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 6,
+      "team1": "Uzbekist\u00e1n",
+      "team2": "Colombia",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 1,
+      "team1": "Inglaterra",
+      "team2": "Croacia",
+      "goals1": 4,
+      "goals2": 2,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 2,
+      "team1": "Inglaterra",
+      "team2": "Ghana",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 3,
+      "team1": "Inglaterra",
+      "team2": "Panam\u00e1",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 4,
+      "team1": "Croacia",
+      "team2": "Ghana",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 5,
+      "team1": "Croacia",
+      "team2": "Panam\u00e1",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 6,
+      "team1": "Ghana",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 2,
+      "sheet": "Grupo L"
+    }
+  ],
+  "Fer": [
+    {
+      "num": 1,
+      "team1": "M\u00e9xico",
+      "team2": "Sud\u00e1frica",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 2,
+      "team1": "M\u00e9xico",
+      "team2": "Corea del Sur",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 3,
+      "team1": "M\u00e9xico",
+      "team2": "Rep. Checa",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 4,
+      "team1": "Sud\u00e1frica",
+      "team2": "Corea del Sur",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 5,
+      "team1": "Sud\u00e1frica",
+      "team2": "Rep. Checa",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 6,
+      "team1": "Corea del Sur",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 1,
+      "team1": "Canad\u00e1",
+      "team2": "Bosnia-Herz.",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 2,
+      "team1": "Canad\u00e1",
+      "team2": "Qatar",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 3,
+      "team1": "Canad\u00e1",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 4,
+      "team1": "Bosnia-Herz.",
+      "team2": "Qatar",
+      "goals1": 0,
+      "goals2": 0,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 5,
+      "team1": "Bosnia-Herz.",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 6,
+      "team1": "Qatar",
+      "team2": "Suiza",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 1,
+      "team1": "Brasil",
+      "team2": "Marruecos",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 2,
+      "team1": "Brasil",
+      "team2": "Escocia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 3,
+      "team1": "Brasil",
+      "team2": "Hait\u00ed",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 4,
+      "team1": "Marruecos",
+      "team2": "Escocia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 5,
+      "team1": "Marruecos",
+      "team2": "Hait\u00ed",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 6,
+      "team1": "Escocia",
+      "team2": "Hait\u00ed",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 1,
+      "team1": "Estados Unidos",
+      "team2": "Turqu\u00eda",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 2,
+      "team1": "Estados Unidos",
+      "team2": "Australia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 3,
+      "team1": "Estados Unidos",
+      "team2": "Paraguay",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 4,
+      "team1": "Turqu\u00eda",
+      "team2": "Australia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 5,
+      "team1": "Turqu\u00eda",
+      "team2": "Paraguay",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 6,
+      "team1": "Australia",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 1,
+      "team1": "Alemania",
+      "team2": "Costa de Marfil",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 2,
+      "team1": "Alemania",
+      "team2": "Ecuador",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 3,
+      "team1": "Alemania",
+      "team2": "Curazao",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 4,
+      "team1": "Costa de Marfil",
+      "team2": "Ecuador",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 5,
+      "team1": "Costa de Marfil",
+      "team2": "Curazao",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 6,
+      "team1": "Ecuador",
+      "team2": "Curazao",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 1,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Jap\u00f3n",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 2,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Suecia",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 3,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "T\u00fanez",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 4,
+      "team1": "Jap\u00f3n",
+      "team2": "Suecia",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 5,
+      "team1": "Jap\u00f3n",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 6,
+      "team1": "Suecia",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 1,
+      "team1": "B\u00e9lgica",
+      "team2": "Ir\u00e1n",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 2,
+      "team1": "B\u00e9lgica",
+      "team2": "Egipto",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 3,
+      "team1": "B\u00e9lgica",
+      "team2": "Nueva Zelanda",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 4,
+      "team1": "Ir\u00e1n",
+      "team2": "Egipto",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 5,
+      "team1": "Ir\u00e1n",
+      "team2": "Nueva Zelanda",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 6,
+      "team1": "Egipto",
+      "team2": "Nueva Zelanda",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 1,
+      "team1": "Espa\u00f1a",
+      "team2": "Cabo Verde",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 2,
+      "team1": "Espa\u00f1a",
+      "team2": "Arabia Saudita",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 3,
+      "team1": "Espa\u00f1a",
+      "team2": "Uruguay",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 4,
+      "team1": "Cabo Verde",
+      "team2": "Arabia Saudita",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 5,
+      "team1": "Cabo Verde",
+      "team2": "Uruguay",
+      "goals1": 0,
+      "goals2": 3,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 6,
+      "team1": "Arabia Saudita",
+      "team2": "Uruguay",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 1,
+      "team1": "Francia",
+      "team2": "Irak",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 2,
+      "team1": "Francia",
+      "team2": "Senegal",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 3,
+      "team1": "Francia",
+      "team2": "Noruega",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 4,
+      "team1": "Irak",
+      "team2": "Senegal",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 5,
+      "team1": "Irak",
+      "team2": "Noruega",
+      "goals1": 0,
+      "goals2": 3,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 6,
+      "team1": "Senegal",
+      "team2": "Noruega",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 1,
+      "team1": "Argentina",
+      "team2": "Argelia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 2,
+      "team1": "Argentina",
+      "team2": "Austria",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 3,
+      "team1": "Argentina",
+      "team2": "Jordania",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 4,
+      "team1": "Argelia",
+      "team2": "Austria",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 5,
+      "team1": "Argelia",
+      "team2": "Jordania",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 6,
+      "team1": "Austria",
+      "team2": "Jordania",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 1,
+      "team1": "Portugal",
+      "team2": "RD del Congo",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 2,
+      "team1": "Portugal",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 3,
+      "team1": "Portugal",
+      "team2": "Colombia",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 4,
+      "team1": "RD del Congo",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 5,
+      "team1": "RD del Congo",
+      "team2": "Colombia",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 6,
+      "team1": "Uzbekist\u00e1n",
+      "team2": "Colombia",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 1,
+      "team1": "Inglaterra",
+      "team2": "Croacia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 2,
+      "team1": "Inglaterra",
+      "team2": "Ghana",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 3,
+      "team1": "Inglaterra",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 4,
+      "team1": "Croacia",
+      "team2": "Ghana",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 5,
+      "team1": "Croacia",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 6,
+      "team1": "Ghana",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    }
+  ],
+  "Santiago": [
+    {
+      "num": 1,
+      "team1": "M\u00e9xico",
+      "team2": "Sud\u00e1frica",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 2,
+      "team1": "M\u00e9xico",
+      "team2": "Corea del Sur",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 3,
+      "team1": "M\u00e9xico",
+      "team2": "Rep. Checa",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 4,
+      "team1": "Sud\u00e1frica",
+      "team2": "Corea del Sur",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 5,
+      "team1": "Sud\u00e1frica",
+      "team2": "Rep. Checa",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 6,
+      "team1": "Corea del Sur",
+      "team2": "Rep. Checa",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo A"
+    },
+    {
+      "num": 1,
+      "team1": "Canad\u00e1",
+      "team2": "Bosnia-Herz.",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 2,
+      "team1": "Canad\u00e1",
+      "team2": "Qatar",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 3,
+      "team1": "Canad\u00e1",
+      "team2": "Suiza",
+      "goals1": 2,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 4,
+      "team1": "Bosnia-Herz.",
+      "team2": "Qatar",
+      "goals1": 0,
+      "goals2": 0,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 5,
+      "team1": "Bosnia-Herz.",
+      "team2": "Suiza",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 6,
+      "team1": "Qatar",
+      "team2": "Suiza",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo B"
+    },
+    {
+      "num": 1,
+      "team1": "Brasil",
+      "team2": "Marruecos",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 2,
+      "team1": "Brasil",
+      "team2": "Escocia",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 3,
+      "team1": "Brasil",
+      "team2": "Hait\u00ed",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 4,
+      "team1": "Marruecos",
+      "team2": "Escocia",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 5,
+      "team1": "Marruecos",
+      "team2": "Hait\u00ed",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 6,
+      "team1": "Escocia",
+      "team2": "Hait\u00ed",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo C"
+    },
+    {
+      "num": 1,
+      "team1": "Estados Unidos",
+      "team2": "Turqu\u00eda",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 2,
+      "team1": "Estados Unidos",
+      "team2": "Australia",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 3,
+      "team1": "Estados Unidos",
+      "team2": "Paraguay",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 4,
+      "team1": "Turqu\u00eda",
+      "team2": "Australia",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 5,
+      "team1": "Turqu\u00eda",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 6,
+      "team1": "Australia",
+      "team2": "Paraguay",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo D"
+    },
+    {
+      "num": 1,
+      "team1": "Alemania",
+      "team2": "Costa de Marfil",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 2,
+      "team1": "Alemania",
+      "team2": "Ecuador",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 3,
+      "team1": "Alemania",
+      "team2": "Curazao",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 4,
+      "team1": "Costa de Marfil",
+      "team2": "Ecuador",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 5,
+      "team1": "Costa de Marfil",
+      "team2": "Curazao",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 6,
+      "team1": "Ecuador",
+      "team2": "Curazao",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo E"
+    },
+    {
+      "num": 1,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Jap\u00f3n",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 2,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "Suecia",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 3,
+      "team1": "Pa\u00edses Bajos",
+      "team2": "T\u00fanez",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 4,
+      "team1": "Jap\u00f3n",
+      "team2": "Suecia",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 5,
+      "team1": "Jap\u00f3n",
+      "team2": "T\u00fanez",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 6,
+      "team1": "Suecia",
+      "team2": "T\u00fanez",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo F"
+    },
+    {
+      "num": 1,
+      "team1": "B\u00e9lgica",
+      "team2": "Ir\u00e1n",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 2,
+      "team1": "B\u00e9lgica",
+      "team2": "Egipto",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 3,
+      "team1": "B\u00e9lgica",
+      "team2": "Nueva Zelanda",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 4,
+      "team1": "Ir\u00e1n",
+      "team2": "Egipto",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 5,
+      "team1": "Ir\u00e1n",
+      "team2": "Nueva Zelanda",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 6,
+      "team1": "Egipto",
+      "team2": "Nueva Zelanda",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo G"
+    },
+    {
+      "num": 1,
+      "team1": "Espa\u00f1a",
+      "team2": "Cabo Verde",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 2,
+      "team1": "Espa\u00f1a",
+      "team2": "Arabia Saudita",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 3,
+      "team1": "Espa\u00f1a",
+      "team2": "Uruguay",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 4,
+      "team1": "Cabo Verde",
+      "team2": "Arabia Saudita",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 5,
+      "team1": "Cabo Verde",
+      "team2": "Uruguay",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 6,
+      "team1": "Arabia Saudita",
+      "team2": "Uruguay",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo H"
+    },
+    {
+      "num": 1,
+      "team1": "Francia",
+      "team2": "Irak",
+      "goals1": 5,
+      "goals2": 0,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 2,
+      "team1": "Francia",
+      "team2": "Senegal",
+      "goals1": 4,
+      "goals2": 0,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 3,
+      "team1": "Francia",
+      "team2": "Noruega",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 4,
+      "team1": "Irak",
+      "team2": "Senegal",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 5,
+      "team1": "Irak",
+      "team2": "Noruega",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 6,
+      "team1": "Senegal",
+      "team2": "Noruega",
+      "goals1": 1,
+      "goals2": 2,
+      "sheet": "Grupo I"
+    },
+    {
+      "num": 1,
+      "team1": "Argentina",
+      "team2": "Argelia",
+      "goals1": 6,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 2,
+      "team1": "Argentina",
+      "team2": "Austria",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 3,
+      "team1": "Argentina",
+      "team2": "Jordania",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 4,
+      "team1": "Argelia",
+      "team2": "Austria",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 5,
+      "team1": "Argelia",
+      "team2": "Jordania",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 6,
+      "team1": "Austria",
+      "team2": "Jordania",
+      "goals1": 1,
+      "goals2": 0,
+      "sheet": "Grupo J"
+    },
+    {
+      "num": 1,
+      "team1": "Portugal",
+      "team2": "RD del Congo",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 2,
+      "team1": "Portugal",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 3,
+      "goals2": 0,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 3,
+      "team1": "Portugal",
+      "team2": "Colombia",
+      "goals1": 3,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 4,
+      "team1": "RD del Congo",
+      "team2": "Uzbekist\u00e1n",
+      "goals1": 1,
+      "goals2": 1,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 5,
+      "team1": "RD del Congo",
+      "team2": "Colombia",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 6,
+      "team1": "Uzbekist\u00e1n",
+      "team2": "Colombia",
+      "goals1": 0,
+      "goals2": 2,
+      "sheet": "Grupo K"
+    },
+    {
+      "num": 1,
+      "team1": "Inglaterra",
+      "team2": "Croacia",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 2,
+      "team1": "Inglaterra",
+      "team2": "Ghana",
+      "goals1": 4,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 3,
+      "team1": "Inglaterra",
+      "team2": "Panam\u00e1",
+      "goals1": 3,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 4,
+      "team1": "Croacia",
+      "team2": "Ghana",
+      "goals1": 2,
+      "goals2": 0,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 5,
+      "team1": "Croacia",
+      "team2": "Panam\u00e1",
+      "goals1": 2,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    },
+    {
+      "num": 6,
+      "team1": "Ghana",
+      "team2": "Panam\u00e1",
+      "goals1": 0,
+      "goals2": 1,
+      "sheet": "Grupo L"
+    }
+  ]
+}

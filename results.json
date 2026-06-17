@@ -1,0 +1,177 @@
+{
+  "Grupo A": {
+    "1": {
+      "goals1": 2,
+      "goals2": 0,
+      "pending": false
+    },
+    "6": {
+      "goals1": 2,
+      "goals2": 1,
+      "pending": false
+    }
+  },
+  "Grupo B": {
+    "1": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    },
+    "6": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    }
+  },
+  "Grupo C": {
+    "3": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    },
+    "4": {
+      "goals1": 0,
+      "goals2": 1,
+      "pending": false
+    },
+    "1": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    },
+    "6": {
+      "goals1": 1,
+      "goals2": 0,
+      "pending": false
+    }
+  },
+  "Grupo D": {
+    "1": {
+      "goals1": 4,
+      "goals2": 1,
+      "pending": false
+    },
+    "6": {
+      "goals1": 2,
+      "goals2": 0,
+      "pending": false
+    },
+    "3": {
+      "goals1": 4,
+      "goals2": 1,
+      "pending": false
+    },
+    "4": {
+      "goals1": 0,
+      "goals2": 2,
+      "pending": false
+    }
+  },
+  "Grupo E": {
+    "2": {
+      "goals1": 7,
+      "goals2": 1,
+      "pending": false
+    },
+    "5": {
+      "goals1": 1,
+      "goals2": 0,
+      "pending": false
+    },
+    "3": {
+      "goals1": 7,
+      "goals2": 1,
+      "pending": false
+    },
+    "4": {
+      "goals1": 1,
+      "goals2": 0,
+      "pending": false
+    }
+  },
+  "Grupo F": {
+    "3": {
+      "goals1": 2,
+      "goals2": 2,
+      "pending": false
+    },
+    "4": {
+      "goals1": 5,
+      "goals2": 1,
+      "pending": false
+    },
+    "1": {
+      "goals1": 2,
+      "goals2": 2,
+      "pending": false
+    },
+    "6": {
+      "goals1": 5,
+      "goals2": 1,
+      "pending": false
+    }
+  },
+  "Grupo G": {
+    "3": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    },
+    "4": {
+      "goals1": 2,
+      "goals2": 2,
+      "pending": false
+    },
+    "2": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    },
+    "5": {
+      "goals1": 2,
+      "goals2": 2,
+      "pending": false
+    }
+  },
+  "Grupo H": {
+    "3": {
+      "goals1": 0,
+      "goals2": 0,
+      "pending": false
+    },
+    "4": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    },
+    "1": {
+      "goals1": 0,
+      "goals2": 0,
+      "pending": false
+    },
+    "6": {
+      "goals1": 1,
+      "goals2": 1,
+      "pending": false
+    }
+  },
+  "Grupo I": {
+    "2": {
+      "goals1": 3,
+      "goals2": 1,
+      "pending": false
+    },
+    "5": {
+      "goals1": 1,
+      "goals2": 4,
+      "pending": false
+    }
+  },
+  "Grupo J": {
+    "1": {
+      "goals1": 3,
+      "goals2": 0,
+      "pending": false
+    }
+  }
+}
