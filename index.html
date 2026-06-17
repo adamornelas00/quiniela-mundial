@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiniela Mundial 2026 - Seguimiento</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f7fa; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+header { background: #0d1b2a; color: white; padding: 30px 20px; text-align: center; border-radius: 12px; margin-bottom: 24px; }
+header h1 { font-size: 2rem; margin-bottom: 8px; }
+header p { color: #c7ae4a; font-size: 1.1rem; }
+.scoreboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; border-top: 4px solid #2e5f8a; }
+.card .name { font-size: 1.3rem; font-weight: bold; color: #0d1b2a; margin-bottom: 8px; }
+.card .points { font-size: 2.5rem; color: #1a6b34; font-weight: bold; }
+.card .detail { font-size: 0.85rem; color: #666; margin-top: 8px; }
+.section { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.section h2 { color: #0d1b2a; margin-bottom: 16px; font-size: 1.3rem; border-bottom: 2px solid #c7ae4a; padding-bottom: 8px; }
+.rules { background: #fff8e1; border-left: 4px solid #c7ae4a; padding: 12px 16px; margin-bottom: 20px; border-radius: 0 8px 8px 0; }
+.rules strong { color: #0d1b2a; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { padding: 10px 8px; text-align: center; border-bottom: 1px solid #eee; }
+th { background: #f0f4f8; color: #0d1b2a; font-weight: 600; }
+td:first-child { text-align: left; }
+.pending { color: #999; font-style: italic; }
+.exact { color: #1a6b34; font-weight: bold; }
+.result { color: #2e7d32; }
+.wrong { color: #922b21; }
+.team { font-weight: 600; }
+.score { font-size: 1.1rem; font-weight: bold; color: #0d1b2a; }
+footer { text-align: center; padding: 20px; color: #888; font-size: 0.85rem; }
+@media (max-width: 600px) {
+  .scoreboard { grid-template-columns: 1fr 1fr; }
+  table { font-size: 0.8rem; }
+  th, td { padding: 6px 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>⚽ Quiniela Mundial 2026</h1>
+<p>Seguimiento diario | Actualizado: 16 de junio de 2026</p>
+</header>
+
+<div class="rules">
+<strong>Sistema de puntuación (por confirmar):</strong><br>
+• 3 puntos = Marcador exacto<br>
+• 1 punto = Acierto de ganador/empate<br>
+• 0 puntos = Sin acierto<br>
+<em>Nota: No se encontraron reglas explícitas en los archivos Excel. Este es un sistema estándar. Si tienen reglas diferentes, avísame y actualizo el cálculo.</em>
+</div>
+
+<div class="scoreboard">
+
+<div class="card">
+<div class="name">Adam</div>
+<div class="points">19 pts</div>
+<div class="detail">Exactos: 4 | Resultados: 7 | Errados: 7<br>Pendientes: 54</div>
+</div>
+
+<div class="card">
+<div class="name">Diego</div>
+<div class="points">9 pts</div>
+<div class="detail">Exactos: 0 | Resultados: 9 | Errados: 9<br>Pendientes: 54</div>
+</div>
+
+<div class="card">
+<div class="name">Fer</div>
+<div class="points">9 pts</div>
+<div class="detail">Exactos: 1 | Resultados: 6 | Errados: 11<br>Pendientes: 54</div>
+</div>
+
+<div class="card">
+<div class="name">Santiago</div>
+<div class="points">5 pts</div>
+<div class="detail">Exactos: 0 | Resultados: 5 | Errados: 13<br>Pendientes: 54</div>
+</div>
+
+</div>
+
+<div class="section">
+<h2>📊 Detalle por partido</h2>
+<table>
+<thead>
+<tr>
+<th>Partido</th>
+<th>Resultado Real</th>
+<th>Adam</th>
+<th>Diego</th>
+<th>Fer</th>
+<th>Santiago</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>México vs Sudáfrica</strong></td><td><span class="score">2 - 0</span></td><td class="result">2-1 (1p)</td><td class="result">2-1 (1p)</td><td class="result">2-1 (1p)</td><td class="result">2-1 (1p)</td></tr>
+<tr><td><strong>Grupo A - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">1-2</td><td class="pending">2-1</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo A - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">2-0</td><td class="pending">3-0</td><td class="pending">2-0</td></tr>
+<tr><td><strong>Grupo A - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-2</td><td class="pending">1-1</td><td class="pending">1-2</td><td class="pending">2-1</td></tr>
+<tr><td><strong>Grupo A - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">2-1</td><td class="pending">1-2</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Corea del Sur vs Rep. Checa</strong></td><td><span class="score">2 - 1</span></td><td class="exact">2-1 (3p)</td><td class="result">2-0 (1p)</td><td class="exact">2-1 (3p)</td><td class="wrong">1-1 (0p)</td></tr>
+<tr><td><strong>Canadá vs Bosnia-Herz.</strong></td><td><span class="score">1 - 1</span></td><td class="exact">1-1 (3p)</td><td class="wrong">3-1 (0p)</td><td class="wrong">2-1 (0p)</td><td class="wrong">2-0 (0p)</td></tr>
+<tr><td><strong>Grupo B - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">2-1</td><td class="pending">3-0</td><td class="pending">2-1</td></tr>
+<tr><td><strong>Grupo B - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-2</td><td class="pending">1-1</td><td class="pending">1-2</td><td class="pending">2-2</td></tr>
+<tr><td><strong>Grupo B - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">2-2</td><td class="pending">0-0</td><td class="pending">0-0</td></tr>
+<tr><td><strong>Grupo B - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-2</td><td class="pending">1-3</td><td class="pending">1-2</td><td class="pending">0-2</td></tr>
+<tr><td><strong>Qatar vs Suiza</strong></td><td><span class="score">1 - 1</span></td><td class="exact">1-1 (3p)</td><td class="result">2-2 (1p)</td><td class="wrong">0-2 (0p)</td><td class="wrong">1-2 (0p)</td></tr>
+<tr><td><strong>Grupo C - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">3-1</td><td class="pending">2-0</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo C - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-0</td><td class="pending">3-0</td><td class="pending">2-1</td><td class="pending">3-0</td></tr>
+<tr><td><strong>Brasil vs Marruecos</strong></td><td><span class="score">1 - 1</span></td><td class="wrong">3-0 (0p)</td><td class="wrong">4-1 (0p)</td><td class="wrong">4-0 (0p)</td><td class="wrong">3-0 (0p)</td></tr>
+<tr><td><strong>Haití vs Escocia</strong></td><td><span class="score">0 - 1</span></td><td class="wrong">2-0 (0p)</td><td class="wrong">2-1 (0p)</td><td class="wrong">2-1 (0p)</td><td class="wrong">1-0 (0p)</td></tr>
+<tr><td><strong>Grupo C - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">2-0</td><td class="pending">3-0</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Grupo C - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">1-1</td><td class="pending">2-0</td><td class="pending">1-1</td></tr>
+<tr><td><strong>Estados Unidos vs Paraguay</strong></td><td><span class="score">4 - 1</span></td><td class="result">2-1 (1p)</td><td class="result">3-1 (1p)</td><td class="wrong">1-2 (0p)</td><td class="result">2-1 (1p)</td></tr>
+<tr><td><strong>Grupo D - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">2-1</td><td class="pending">2-1</td><td class="pending">2-0</td></tr>
+<tr><td><strong>Grupo D - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">2-1</td><td class="pending">2-0</td><td class="pending">2-1</td></tr>
+<tr><td><strong>Grupo D - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">1-1</td><td class="pending">2-1</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Grupo D - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">1-2</td><td class="pending">2-0</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Australia vs Turquía</strong></td><td><span class="score">2 - 0</span></td><td class="wrong">1-1 (0p)</td><td class="wrong">1-1 (0p)</td><td class="wrong">1-1 (0p)</td><td class="wrong">1-1 (0p)</td></tr>
+<tr><td><strong>Grupo E - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">3-1</td><td class="pending">3-1</td><td class="pending">3-0</td></tr>
+<tr><td><strong>Alemania vs Curazao</strong></td><td><span class="score">7 - 1</span></td><td class="wrong">1-1 (0p)</td><td class="result">3-0 (1p)</td><td class="result">2-1 (1p)</td><td class="result">2-0 (1p)</td></tr>
+<tr><td><strong>Grupo E - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-0</td><td class="pending">3-0</td><td class="pending">4-0</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo E - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">1-2</td><td class="pending">1-2</td><td class="pending">0-1</td></tr>
+<tr><td><strong>Costa de Marfil vs Ecuador</strong></td><td><span class="score">1 - 0</span></td><td class="result">2-0 (1p)</td><td class="wrong">1-1 (0p)</td><td class="result">2-0 (1p)</td><td class="wrong">0-1 (0p)</td></tr>
+<tr><td><strong>Grupo E - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">2-1</td><td class="pending">2-0</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Grupo F - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">3-2</td><td class="pending">2-1</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo F - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">2-0</td><td class="pending">2-1</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Países Bajos vs Japón</strong></td><td><span class="score">2 - 2</span></td><td class="wrong">2-0 (0p)</td><td class="wrong">2-1 (0p)</td><td class="wrong">3-0 (0p)</td><td class="wrong">2-0 (0p)</td></tr>
+<tr><td><strong>Suecia vs Túnez</strong></td><td><span class="score">5 - 1</span></td><td class="result">2-1 (1p)</td><td class="result">2-0 (1p)</td><td class="wrong">1-2 (0p)</td><td class="wrong">1-1 (0p)</td></tr>
+<tr><td><strong>Grupo F - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">2-0</td><td class="pending">2-0</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Grupo F - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">1-1</td><td class="pending">2-0</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Grupo G - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">2-1</td><td class="pending">2-1</td><td class="pending">2-0</td></tr>
+<tr><td><strong>Grupo G - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">3-1</td><td class="pending">2-0</td><td class="pending">2-1</td></tr>
+<tr><td><strong>Bélgica vs Egipto</strong></td><td><span class="score">1 - 1</span></td><td class="wrong">3-0 (0p)</td><td class="wrong">3-1 (0p)</td><td class="wrong">3-0 (0p)</td><td class="wrong">2-0 (0p)</td></tr>
+<tr><td><strong>Irán vs Nueva Zelanda</strong></td><td><span class="score">2 - 2</span></td><td class="result">1-1 (1p)</td><td class="wrong">2-3 (0p)</td><td class="wrong">1-2 (0p)</td><td class="wrong">1-2 (0p)</td></tr>
+<tr><td><strong>Grupo G - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">1-1</td><td class="pending">1-1</td><td class="pending">1-1</td></tr>
+<tr><td><strong>Grupo G - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">1-1</td><td class="pending">2-0</td><td class="pending">2-1</td></tr>
+<tr><td><strong>Grupo H - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-0</td><td class="pending">3-1</td><td class="pending">3-0</td><td class="pending">4-0</td></tr>
+<tr><td><strong>Grupo H - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">3-1</td><td class="pending">2-0</td><td class="pending">4-1</td></tr>
+<tr><td><strong>España vs Cabo Verde</strong></td><td><span class="score">0 - 0</span></td><td class="wrong">2-1 (0p)</td><td class="wrong">3-2 (0p)</td><td class="result">1-1 (1p)</td><td class="wrong">2-1 (0p)</td></tr>
+<tr><td><strong>Arabia Saudita vs Uruguay</strong></td><td><span class="score">1 - 1</span></td><td class="exact">1-1 (3p)</td><td class="result">2-2 (1p)</td><td class="wrong">0-2 (0p)</td><td class="wrong">0-1 (0p)</td></tr>
+<tr><td><strong>Grupo H - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">0-2</td><td class="pending">2-3</td><td class="pending">0-3</td><td class="pending">0-2</td></tr>
+<tr><td><strong>Grupo H - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-2</td><td class="pending">1-2</td><td class="pending">1-2</td><td class="pending">1-2</td></tr>
+<tr><td><strong>Grupo I - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-1</td><td class="pending">4-0</td><td class="pending">4-0</td><td class="pending">5-0</td></tr>
+<tr><td><strong>Francia vs Senegal</strong></td><td><span class="score">1 - 0</span></td><td class="result">2-1 (1p)</td><td class="result">3-0 (1p)</td><td class="result">2-0 (1p)</td><td class="result">4-0 (1p)</td></tr>
+<tr><td><strong>Grupo I - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">3-1</td><td class="pending">2-1</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo I - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">0-2</td><td class="pending">1-2</td><td class="pending">0-1</td><td class="pending">0-1</td></tr>
+<tr><td><strong>Irak vs Noruega</strong></td><td><span class="score">1 - 4</span></td><td class="result">1-2 (1p)</td><td class="result">0-3 (1p)</td><td class="result">0-3 (1p)</td><td class="result">0-2 (1p)</td></tr>
+<tr><td><strong>Grupo I - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">1-3</td><td class="pending">1-2</td><td class="pending">1-2</td></tr>
+<tr><td><strong>Grupo J - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-0</td><td class="pending">4-1</td><td class="pending">2-0</td><td class="pending">6-1</td></tr>
+<tr><td><strong>Grupo J - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">3-1</td><td class="pending">3-1</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo J - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">4-0</td><td class="pending">3-0</td><td class="pending">4-1</td></tr>
+<tr><td><strong>Grupo J - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">1-2</td><td class="pending">1-1</td><td class="pending">0-1</td></tr>
+<tr><td><strong>Grupo J - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">1-1</td><td class="pending">1-0</td><td class="pending">1-1</td></tr>
+<tr><td><strong>Grupo J - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">1-1</td><td class="pending">2-0</td><td class="pending">1-0</td></tr>
+<tr><td><strong>Grupo K - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">4-1</td><td class="pending">2-0</td><td class="pending">3-0</td></tr>
+<tr><td><strong>Grupo K - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-0</td><td class="pending">4-0</td><td class="pending">3-0</td><td class="pending">3-0</td></tr>
+<tr><td><strong>Grupo K - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">4-1</td><td class="pending">3-1</td><td class="pending">3-2</td></tr>
+<tr><td><strong>Grupo K - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">2-2</td><td class="pending">1-1</td><td class="pending">1-1</td></tr>
+<tr><td><strong>Grupo K - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">0-1</td><td class="pending">2-3</td><td class="pending">0-2</td><td class="pending">0-2</td></tr>
+<tr><td><strong>Grupo K - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">0-2</td><td class="pending">1-2</td><td class="pending">1-2</td><td class="pending">0-2</td></tr>
+<tr><td><strong>Grupo L - M1</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">4-2</td><td class="pending">2-0</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo L - M2</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">3-0</td><td class="pending">4-1</td><td class="pending">3-0</td><td class="pending">4-1</td></tr>
+<tr><td><strong>Grupo L - M3</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">3-0</td><td class="pending">2-1</td><td class="pending">3-1</td></tr>
+<tr><td><strong>Grupo L - M4</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-1</td><td class="pending">3-1</td><td class="pending">1-1</td><td class="pending">2-0</td></tr>
+<tr><td><strong>Grupo L - M5</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">2-0</td><td class="pending">3-0</td><td class="pending">2-0</td><td class="pending">2-1</td></tr>
+<tr><td><strong>Grupo L - M6</strong></td><td><span class="pending">Pendiente</span></td><td class="pending">1-1</td><td class="pending">2-2</td><td class="pending">2-0</td><td class="pending">0-1</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="section">
+<h2>📝 Resumen de predicciones por grupo</h2>
+<h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo A</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>México vs Sudáfrica</td><td>2-0</td><td>2-1</td><td>2-1</td><td>2-1</td><td>2-1</td></tr><tr><td>México vs Corea del Sur</td><td>Pendiente</td><td>1-1</td><td>1-2</td><td>2-1</td><td>3-1</td></tr><tr><td>México vs Rep. Checa</td><td>Pendiente</td><td>2-0</td><td>2-0</td><td>3-0</td><td>2-0</td></tr><tr><td>Sudáfrica vs Corea del Sur</td><td>Pendiente</td><td>1-2</td><td>1-1</td><td>1-2</td><td>2-1</td></tr><tr><td>Sudáfrica vs Rep. Checa</td><td>Pendiente</td><td>1-1</td><td>2-1</td><td>1-2</td><td>1-0</td></tr><tr><td>Corea del Sur vs Rep. Checa</td><td>2-1</td><td>2-1</td><td>2-0</td><td>2-1</td><td>1-1</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo B</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Canadá vs Bosnia-Herz.</td><td>1-1</td><td>1-1</td><td>3-1</td><td>2-1</td><td>2-0</td></tr><tr><td>Canadá vs Qatar</td><td>Pendiente</td><td>2-0</td><td>2-1</td><td>3-0</td><td>2-1</td></tr><tr><td>Canadá vs Suiza</td><td>Pendiente</td><td>1-2</td><td>1-1</td><td>1-2</td><td>2-2</td></tr><tr><td>Bosnia-Herz. vs Qatar</td><td>Pendiente</td><td>2-1</td><td>2-2</td><td>0-0</td><td>0-0</td></tr><tr><td>Bosnia-Herz. vs Suiza</td><td>Pendiente</td><td>1-2</td><td>1-3</td><td>1-2</td><td>0-2</td></tr><tr><td>Qatar vs Suiza</td><td>1-1</td><td>1-1</td><td>2-2</td><td>0-2</td><td>1-2</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo C</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Brasil vs Marruecos</td><td>Pendiente</td><td>2-1</td><td>3-1</td><td>2-0</td><td>3-1</td></tr><tr><td>Brasil vs Escocia</td><td>Pendiente</td><td>3-0</td><td>3-0</td><td>2-1</td><td>3-0</td></tr><tr><td>Brasil vs Marruecos</td><td>1-1</td><td>3-0</td><td>4-1</td><td>4-0</td><td>3-0</td></tr><tr><td>Haití vs Escocia</td><td>0-1</td><td>2-0</td><td>2-1</td><td>2-1</td><td>1-0</td></tr><tr><td>Marruecos vs Haití</td><td>Pendiente</td><td>2-1</td><td>2-0</td><td>3-0</td><td>1-0</td></tr><tr><td>Escocia vs Haití</td><td>Pendiente</td><td>1-1</td><td>1-1</td><td>2-0</td><td>1-1</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo D</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Estados Unidos vs Paraguay</td><td>4-1</td><td>2-1</td><td>3-1</td><td>1-2</td><td>2-1</td></tr><tr><td>EE.UU. vs Australia</td><td>Pendiente</td><td>2-0</td><td>2-1</td><td>2-1</td><td>2-0</td></tr><tr><td>EE.UU. vs Paraguay</td><td>Pendiente</td><td>1-1</td><td>2-1</td><td>2-0</td><td>2-1</td></tr><tr><td>Turquía vs Australia</td><td>Pendiente</td><td>2-1</td><td>1-1</td><td>2-1</td><td>1-0</td></tr><tr><td>Turquía vs Paraguay</td><td>Pendiente</td><td>2-1</td><td>1-2</td><td>2-0</td><td>1-0</td></tr><tr><td>Australia vs Turquía</td><td>2-0</td><td>1-1</td><td>1-1</td><td>1-1</td><td>1-1</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo E</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Alemania vs Costa de Marfil</td><td>Pendiente</td><td>2-1</td><td>3-1</td><td>3-1</td><td>3-0</td></tr><tr><td>Alemania vs Curazao</td><td>7-1</td><td>1-1</td><td>3-0</td><td>2-1</td><td>2-0</td></tr><tr><td>Alemania vs Curazao</td><td>Pendiente</td><td>3-0</td><td>3-0</td><td>4-0</td><td>3-1</td></tr><tr><td>Costa de Marfil vs Ecuador</td><td>Pendiente</td><td>1-1</td><td>1-2</td><td>1-2</td><td>0-1</td></tr><tr><td>Costa de Marfil vs Ecuador</td><td>1-0</td><td>2-0</td><td>1-1</td><td>2-0</td><td>0-1</td></tr><tr><td>Ecuador vs Curazao</td><td>Pendiente</td><td>2-0</td><td>2-1</td><td>2-0</td><td>1-0</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo F</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Países Bajos vs Japón</td><td>Pendiente</td><td>2-1</td><td>3-2</td><td>2-1</td><td>3-1</td></tr><tr><td>Países Bajos vs Suecia</td><td>Pendiente</td><td>2-1</td><td>2-0</td><td>2-1</td><td>3-1</td></tr><tr><td>Países Bajos vs Japón</td><td>2-2</td><td>2-0</td><td>2-1</td><td>3-0</td><td>2-0</td></tr><tr><td>Suecia vs Túnez</td><td>5-1</td><td>2-1</td><td>2-0</td><td>1-2</td><td>1-1</td></tr><tr><td>Japón vs Túnez</td><td>Pendiente</td><td>2-1</td><td>2-0</td><td>2-0</td><td>1-0</td></tr><tr><td>Suecia vs Túnez</td><td>Pendiente</td><td>1-1</td><td>1-1</td><td>2-0</td><td>1-0</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo G</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Bélgica vs Irán</td><td>Pendiente</td><td>2-0</td><td>2-1</td><td>2-1</td><td>2-0</td></tr><tr><td>Bélgica vs Egipto</td><td>Pendiente</td><td>1-1</td><td>3-1</td><td>2-0</td><td>2-1</td></tr><tr><td>Bélgica vs Egipto</td><td>1-1</td><td>3-0</td><td>3-1</td><td>3-0</td><td>2-0</td></tr><tr><td>Irán vs Nueva Zelanda</td><td>2-2</td><td>1-1</td><td>2-3</td><td>1-2</td><td>1-2</td></tr><tr><td>Irán vs Nueva Zelanda</td><td>Pendiente</td><td>2-1</td><td>1-1</td><td>1-1</td><td>1-1</td></tr><tr><td>Egipto vs Nueva Zelanda</td><td>Pendiente</td><td>2-0</td><td>1-1</td><td>2-0</td><td>2-1</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo H</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>España vs Cabo Verde</td><td>Pendiente</td><td>3-0</td><td>3-1</td><td>3-0</td><td>4-0</td></tr><tr><td>España vs Arabia Saudita</td><td>Pendiente</td><td>2-0</td><td>3-1</td><td>2-0</td><td>4-1</td></tr><tr><td>España vs Cabo Verde</td><td>0-0</td><td>2-1</td><td>3-2</td><td>1-1</td><td>2-1</td></tr><tr><td>Arabia Saudita vs Uruguay</td><td>1-1</td><td>1-1</td><td>2-2</td><td>0-2</td><td>0-1</td></tr><tr><td>Cabo Verde vs Uruguay</td><td>Pendiente</td><td>0-2</td><td>2-3</td><td>0-3</td><td>0-2</td></tr><tr><td>Arabia Saudita vs Uruguay</td><td>Pendiente</td><td>1-2</td><td>1-2</td><td>1-2</td><td>1-2</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo I</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Francia vs Irak</td><td>Pendiente</td><td>3-1</td><td>4-0</td><td>4-0</td><td>5-0</td></tr><tr><td>Francia vs Senegal</td><td>1-0</td><td>2-1</td><td>3-0</td><td>2-0</td><td>4-0</td></tr><tr><td>Francia vs Noruega</td><td>Pendiente</td><td>1-1</td><td>3-1</td><td>2-1</td><td>3-1</td></tr><tr><td>Irak vs Senegal</td><td>Pendiente</td><td>0-2</td><td>1-2</td><td>0-1</td><td>0-1</td></tr><tr><td>Irak vs Noruega</td><td>1-4</td><td>1-2</td><td>0-3</td><td>0-3</td><td>0-2</td></tr><tr><td>Senegal vs Noruega</td><td>Pendiente</td><td>2-1</td><td>1-3</td><td>1-2</td><td>1-2</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo J</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Argentina vs Argelia</td><td>Pendiente</td><td>3-0</td><td>4-1</td><td>2-0</td><td>6-1</td></tr><tr><td>Argentina vs Austria</td><td>Pendiente</td><td>2-1</td><td>3-1</td><td>3-1</td><td>3-1</td></tr><tr><td>Argentina vs Jordania</td><td>Pendiente</td><td>2-0</td><td>4-0</td><td>3-0</td><td>4-1</td></tr><tr><td>Argelia vs Austria</td><td>Pendiente</td><td>1-1</td><td>1-2</td><td>1-1</td><td>0-1</td></tr><tr><td>Argelia vs Jordania</td><td>Pendiente</td><td>2-1</td><td>1-1</td><td>1-0</td><td>1-1</td></tr><tr><td>Austria vs Jordania</td><td>Pendiente</td><td>2-1</td><td>1-1</td><td>2-0</td><td>1-0</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo K</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Portugal vs RD del Congo</td><td>Pendiente</td><td>2-1</td><td>4-1</td><td>2-0</td><td>3-0</td></tr><tr><td>Portugal vs Uzbekistán</td><td>Pendiente</td><td>3-0</td><td>4-0</td><td>3-0</td><td>3-0</td></tr><tr><td>Portugal vs Colombia</td><td>Pendiente</td><td>1-1</td><td>4-1</td><td>3-1</td><td>3-2</td></tr><tr><td>RD del Congo vs Uzbekistán</td><td>Pendiente</td><td>1-1</td><td>2-2</td><td>1-1</td><td>1-1</td></tr><tr><td>RD del Congo vs Colombia</td><td>Pendiente</td><td>0-1</td><td>2-3</td><td>0-2</td><td>0-2</td></tr><tr><td>Uzbekistán vs Colombia</td><td>Pendiente</td><td>0-2</td><td>1-2</td><td>1-2</td><td>0-2</td></tr></tbody></table><h3 style='margin:16px 0 8px; color:#2e5f8a;'>Grupo L</h3><table><thead><tr><th>Partido</th><th>Real</th><th>Adam</th><th>Diego</th><th>Fer</th><th>Santiago</th></tr></thead><tbody><tr><td>Inglaterra vs Croacia</td><td>Pendiente</td><td>2-1</td><td>4-2</td><td>2-0</td><td>3-1</td></tr><tr><td>Inglaterra vs Ghana</td><td>Pendiente</td><td>3-0</td><td>4-1</td><td>3-0</td><td>4-1</td></tr><tr><td>Inglaterra vs Panamá</td><td>Pendiente</td><td>2-0</td><td>3-0</td><td>2-1</td><td>3-1</td></tr><tr><td>Croacia vs Ghana</td><td>Pendiente</td><td>2-1</td><td>3-1</td><td>1-1</td><td>2-0</td></tr><tr><td>Croacia vs Panamá</td><td>Pendiente</td><td>2-0</td><td>3-0</td><td>2-0</td><td>2-1</td></tr><tr><td>Ghana vs Panamá</td><td>Pendiente</td><td>1-1</td><td>2-2</td><td>2-0</td><td>0-1</td></tr></tbody></table>
+</div>
+
+<footer>
+Generado automáticamente desde los archivos Excel de la quiniela.<br>
+Para actualizar resultados o cambiar el sistema de puntuación, contacta al administrador.
+</footer>
+</div>
+</body>
+</html>
