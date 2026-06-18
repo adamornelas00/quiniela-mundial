@@ -193,9 +193,9 @@
     "date": "2026-06-17",
     "home": "Ghana",
     "away": "Panamá",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo K",
