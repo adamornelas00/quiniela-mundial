@@ -211,9 +211,9 @@
     "date": "2026-06-17",
     "home": "Uzbekistán",
     "away": "Colombia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo B",
