@@ -283,9 +283,9 @@
     "date": "2026-06-19",
     "home": "EE.UU.",
     "away": "Australia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 2,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo E",
