@@ -220,9 +220,9 @@
     "date": "2026-06-18",
     "home": "Canadá",
     "away": "Qatar",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 6,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo A",
@@ -238,9 +238,9 @@
     "date": "2026-06-18",
     "home": "México",
     "away": "Corea del Sur",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo B",
