@@ -292,9 +292,9 @@
     "date": "2026-06-20",
     "home": "Ecuador",
     "away": "Curazao",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo E",
