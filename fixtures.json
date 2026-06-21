@@ -319,9 +319,9 @@
     "date": "2026-06-20",
     "home": "Túnez",
     "away": "Japón",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 4,
+    "status": "FT"
   },
   {
     "group": "Grupo G",
