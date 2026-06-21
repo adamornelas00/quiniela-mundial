@@ -328,9 +328,9 @@
     "date": "2026-06-21",
     "home": "Bélgica",
     "away": "Irán",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo G",
