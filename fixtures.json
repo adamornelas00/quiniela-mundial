@@ -346,9 +346,9 @@
     "date": "2026-06-21",
     "home": "España",
     "away": "Arabia Saudita",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 4,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo H",
