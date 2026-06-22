@@ -355,9 +355,9 @@
     "date": "2026-06-21",
     "home": "Uruguay",
     "away": "Cabo Verde",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 2,
+    "awayGoals": 2,
+    "status": "FT"
   },
   {
     "group": "Grupo J",
