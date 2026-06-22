@@ -337,9 +337,9 @@
     "date": "2026-06-21",
     "home": "Nueva Zelanda",
     "away": "Egipto",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo H",
