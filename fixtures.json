@@ -409,9 +409,9 @@
     "date": "2026-06-23",
     "home": "Inglaterra",
     "away": "Ghana",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo L",
