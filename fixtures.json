@@ -400,9 +400,9 @@
     "date": "2026-06-23",
     "home": "Colombia",
     "away": "RD del Congo",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo L",
@@ -418,9 +418,9 @@
     "date": "2026-06-23",
     "home": "Panamá",
     "away": "Croacia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 1,
+    "status": "FT"
   },
   {
     "group": "Grupo K",
