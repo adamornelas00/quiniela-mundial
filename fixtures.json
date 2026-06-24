@@ -436,9 +436,9 @@
     "date": "2026-06-24",
     "home": "Bosnia-Herz.",
     "away": "Qatar",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 3,
+    "awayGoals": 1,
+    "status": "FT"
   },
   {
     "group": "Grupo A",
@@ -481,9 +481,9 @@
     "date": "2026-06-24",
     "home": "Suiza",
     "away": "Canadá",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 2,
+    "awayGoals": 1,
+    "status": "FT"
   },
   {
     "group": "Grupo E",
