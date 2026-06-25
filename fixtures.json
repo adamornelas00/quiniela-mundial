@@ -445,9 +445,9 @@
     "date": "2026-06-24",
     "home": "Rep. Checa",
     "away": "México",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo C",
@@ -472,9 +472,9 @@
     "date": "2026-06-24",
     "home": "Sudáfrica",
     "away": "Corea del Sur",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo B",
