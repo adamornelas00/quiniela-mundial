@@ -454,18 +454,18 @@
     "date": "2026-06-24",
     "home": "Marruecos",
     "away": "Haití",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 4,
+    "awayGoals": 2,
+    "status": "FT"
   },
   {
     "group": "Grupo C",
     "date": "2026-06-24",
     "home": "Escocia",
     "away": "Brasil",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo A",
