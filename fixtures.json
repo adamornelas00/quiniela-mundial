@@ -490,18 +490,18 @@
     "date": "2026-06-25",
     "home": "Curazao",
     "away": "Costa de Marfil",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 2,
+    "status": "FT"
   },
   {
     "group": "Grupo E",
     "date": "2026-06-25",
     "home": "Ecuador",
     "away": "Alemania",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 2,
+    "awayGoals": 1,
+    "status": "FT"
   },
   {
     "group": "Grupo F",
