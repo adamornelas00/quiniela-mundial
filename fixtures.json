@@ -571,18 +571,18 @@
     "date": "2026-06-26",
     "home": "Noruega",
     "away": "Francia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 4,
+    "status": "FT"
   },
   {
     "group": "Grupo I",
     "date": "2026-06-26",
     "home": "Senegal",
     "away": "Irak",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 5,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo H",
