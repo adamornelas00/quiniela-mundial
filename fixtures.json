@@ -508,36 +508,36 @@
     "date": "2026-06-25",
     "home": "Japón",
     "away": "Suecia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 1,
+    "status": "FT"
   },
   {
     "group": "Grupo D",
     "date": "2026-06-25",
     "home": "Paraguay",
     "away": "Australia",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo F",
     "date": "2026-06-25",
     "home": "Túnez",
     "away": "Países Bajos",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo D",
     "date": "2026-06-25",
     "home": "Turquía",
     "away": "EE.UU.",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 3,
+    "awayGoals": 2,
+    "status": "FT"
   },
   {
     "group": "Grupo H",
