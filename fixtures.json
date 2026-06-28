@@ -607,18 +607,18 @@
     "date": "2026-06-27",
     "home": "Colombia",
     "away": "Portugal",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 0,
+    "awayGoals": 0,
+    "status": "FT"
   },
   {
     "group": "Grupo K",
     "date": "2026-06-27",
     "home": "RD del Congo",
     "away": "Uzbekistán",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 3,
+    "awayGoals": 1,
+    "status": "FT"
   },
   {
     "group": "Grupo L",
