@@ -598,9 +598,9 @@
     "date": "2026-06-27",
     "home": "Argelia",
     "away": "Austria",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 3,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo K",
@@ -634,9 +634,9 @@
     "date": "2026-06-27",
     "home": "Jordania",
     "away": "Argentina",
-    "homeGoals": null,
-    "awayGoals": null,
-    "status": "SCHED"
+    "homeGoals": 1,
+    "awayGoals": 3,
+    "status": "FT"
   },
   {
     "group": "Grupo L",
