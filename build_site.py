@@ -71,6 +71,181 @@ def load_json(name):
         return json.load(f)
 
 
+def load_json_optional(name):
+    """Carga un JSON si existe; si no, devuelve None (para no romper el build)."""
+    path = os.path.join(WORKSPACE, name)
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"⚠️  No se pudo leer {name}: {e}")
+        return None
+
+
+# ===========================================================================
+#  FASE ELIMINATORIA (bracket)
+# ===========================================================================
+FLAGS = {
+    "Alemania": "🇩🇪", "Paraguay": "🇵🇾", "Francia": "🇫🇷", "Suecia": "🇸🇪",
+    "Sudáfrica": "🇿🇦", "Canadá": "🇨🇦", "Países Bajos": "🇳🇱", "Marruecos": "🇲🇦",
+    "Portugal": "🇵🇹", "Croacia": "🇭🇷", "España": "🇪🇸", "Austria": "🇦🇹",
+    "EE.UU.": "🇺🇸", "Bosnia-Herz.": "🇧🇦", "Bélgica": "🇧🇪", "Senegal": "🇸🇳",
+    "Brasil": "🇧🇷", "Japón": "🇯🇵", "Costa de Marfil": "🇨🇮", "Noruega": "🇳🇴",
+    "México": "🇲🇽", "Ecuador": "🇪🇨", "Inglaterra": "🏴", "RD del Congo": "🇨🇩",
+    "Argentina": "🇦🇷", "Cabo Verde": "🇨🇻", "Australia": "🇦🇺", "Egipto": "🇪🇬",
+    "Suiza": "🇨🇭", "Argelia": "🇩🇿", "Colombia": "🇨🇴", "Ghana": "🇬🇭",
+    "Arabia Saudita": "🇸🇦", "Corea del Sur": "🇰🇷", "Curazao": "🇨🇼", "Escocia": "🏴",
+    "Haití": "🇭🇹", "Irak": "🇮🇶", "Irán": "🇮🇷", "Jordania": "🇯🇴",
+    "Nueva Zelanda": "🇳🇿", "Panamá": "🇵🇦", "Qatar": "🇶🇦", "Rep. Checa": "🇨🇿",
+    "Túnez": "🇹🇳", "Turquía": "🇹🇷", "Uruguay": "🇺🇾", "Uzbekistán": "🇺🇿",
+}
+
+
+def flag(team):
+    return FLAGS.get(team, "🏳️")
+
+
+def loser_of(match):
+    return match["home"] if match["winner"] == match["away"] else match["away"]
+
+
+def advancers(bracket):
+    """Equipos que el jugador predice que AVANZAN a cada ronda."""
+    return {
+        "r16": [x["winner"] for x in bracket["r32"]],
+        "qf": [x["winner"] for x in bracket["r16"]],
+        "sf": [x["winner"] for x in bracket["qf"]],
+        "final": [x["winner"] for x in bracket["sf"]],
+        "campeon": bracket["final"]["winner"],
+        "third": bracket["third"]["winner"],
+    }
+
+
+def score_knockout(bracket, real, points):
+    """Puntos por acertar qué equipos llegan a cada ronda. real puede estar vacío."""
+    adv = advancers(bracket)
+    pts, detail = 0, {}
+    for rnd in ("r16", "qf", "sf", "final"):
+        real_set = set(real.get(rnd) or [])
+        hits = sum(1 for t in adv[rnd] if t in real_set)
+        gained = hits * points.get(rnd, 0)
+        detail[rnd] = (hits, gained)
+        pts += gained
+    if real.get("campeon") and adv["campeon"] == real["campeon"]:
+        pts += points.get("campeon", 0)
+        detail["campeon"] = (1, points.get("campeon", 0))
+    if real.get("third") and adv["third"] == real["third"]:
+        pts += points.get("third", 0)
+        detail["third"] = (1, points.get("third", 0))
+    return pts, detail
+
+
+def _kmatch_card(mt):
+    """Tarjeta de un partido de bracket."""
+    if not mt:
+        return ""
+    h, a = mt["home"], mt["away"]
+    hg, ag = mt["hg"], mt["ag"]
+    win = mt["winner"]
+    pen = ""
+    if mt.get("pens"):
+        pen = f'<div class="kpen">penales {mt["pens"][0]}-{mt["pens"][1]}</div>'
+    rh = "krow win" if win == h else "krow"
+    ra = "krow win" if win == a else "krow"
+    return (
+        f'<div class="kmatch">'
+        f'<div class="{rh}"><span class="kt">{flag(h)} {h}</span><span class="kg">{hg}</span></div>'
+        f'<div class="{ra}"><span class="kt">{flag(a)} {a}</span><span class="kg">{ag}</span></div>'
+        f'{pen}</div>'
+    )
+
+
+def _kcolumn(title, matches):
+    cards = "".join(_kmatch_card(m) for m in matches)
+    return f'<div class="kcol"><div class="kcol-h">{title}</div>{cards}</div>'
+
+
+def render_player_bracket(player, bracket):
+    champ = bracket["campeon"]
+    fin = bracket["final"]
+    runner = loser_of(fin)
+    third = bracket["third"]["winner"]
+    podium = (f'🥇 {flag(champ)} {champ} · 🥈 {flag(runner)} {runner} · '
+              f'🥉 {flag(third)} {third}')
+    cols = (
+        _kcolumn("16avos", bracket["r32"])
+        + _kcolumn("Octavos", bracket["r16"])
+        + _kcolumn("Cuartos", bracket["qf"])
+        + _kcolumn("Semis", bracket["sf"])
+        + _kcolumn("Final", [bracket["final"]])
+        + _kcolumn("3er lugar", [bracket["third"]])
+    )
+    return f"""
+    <div class="ko-player">
+      <div class="ko-head">
+        <span class="ko-name">{player}</span>
+        <span class="ko-podium">{podium}</span>
+      </div>
+      <div class="bracketwrap"><div class="bracket">{cols}</div></div>
+    </div>"""
+
+
+KO_CSS = """
+<style>
+.ko-rules{background:#eef3f8;border-left:4px solid #1b3a5b;padding:10px 14px;border-radius:0 8px 8px 0;font-size:.86rem;margin-bottom:14px}
+.ko-player{border:1px solid #e6ebf1;border-radius:12px;padding:12px;margin-bottom:14px;background:#fff}
+.ko-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
+.ko-name{font-weight:800;color:#0d1b2a;font-size:1.1rem}
+.ko-podium{background:#fff8e6;border:1px solid #c7ae4a;border-radius:20px;padding:3px 12px;font-size:.85rem;font-weight:600}
+.bracketwrap{overflow-x:auto;padding-bottom:6px}
+.bracket{display:flex;gap:10px;min-width:max-content}
+.kcol{display:flex;flex-direction:column;justify-content:space-around;gap:8px;min-width:148px}
+.kcol-h{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#1b3a5b;text-align:center;background:#eef3f8;border-radius:6px;padding:3px 0}
+.kmatch{border:1px solid #e6ebf1;border-radius:8px;overflow:hidden;font-size:.8rem}
+.krow{display:flex;justify-content:space-between;align-items:center;padding:5px 8px;gap:6px;background:#fff;color:#7a8794}
+.krow.win{background:#e7f6ec;color:#0d1b2a;font-weight:700}
+.krow .kt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.krow .kg{font-weight:800;color:#1a7d3c}
+.kpen{font-size:.68rem;color:#9b2226;text-align:center;background:#fdf0f0;padding:2px}
+.ko-pending{color:#8693a0;font-size:.88rem;background:#f7f9fb;border:1px dashed #cbd3db;border-radius:10px;padding:12px;text-align:center}
+</style>"""
+
+
+def render_knockout(knockout):
+    """Sección 'Fase Eliminatoria'. Devuelve '' si no hay datos (no rompe el build)."""
+    if not knockout or not knockout.get("players"):
+        return ""
+    players = knockout["players"]
+    pts = knockout.get("scoring", {}).get("points", {})
+    rules = (
+        f'<div class="ko-rules"><b>Fase eliminatoria — puntuación (tentativa):</b> '
+        f'acertar qué equipo llega a Octavos +{pts.get("r16",1)}, a Cuartos +{pts.get("qf",2)}, '
+        f'a Semis +{pts.get("sf",4)}, a la Final +{pts.get("final",6)}, '
+        f'Campeón +{pts.get("campeon",10)}, 3er lugar +{pts.get("third",4)}. '
+        f'Se empieza a contar cuando inicien las eliminatorias.</div>'
+    )
+    bodies = ""
+    pendientes = []
+    for p in PLAYERS:
+        b = players.get(p)
+        if b:
+            bodies += render_player_bracket(p, b)
+        else:
+            pendientes.append(p)
+    if pendientes:
+        bodies += (f'<div class="ko-pending">⏳ Bracket pendiente de: '
+                   f'<b>{", ".join(pendientes)}</b>. En cuanto manden su Excel se agrega aquí.</div>')
+    return f"""
+  <section>
+    <h2>🏅 Fase Eliminatoria</h2>
+    {KO_CSS}
+    {rules}
+    {bodies}
+  </section>"""
+
+
 def build_pred_index(quinielas):
     """player -> {(grupo, frozenset(equipos)): pred}"""
     idx = {}
@@ -155,7 +330,10 @@ def main():
         reverse=True,
     )
 
-    html = render(scores, ranking, detalle, real_total_goals, problemas)
+    knockout = load_json_optional("knockout_data.json")
+    knockout_html = render_knockout(knockout)
+
+    html = render(scores, ranking, detalle, real_total_goals, problemas, knockout_html)
     out = os.path.join(WORKSPACE, "index.html")
     with open(out, "w", encoding="utf-8") as f:
         f.write(html)
@@ -196,7 +374,7 @@ def cell_pick(pick):
     return f'<td class="part">{ph}-{pa} <span class="pp">+{pick["pts"]}</span></td>'
 
 
-def render(scores, ranking, detalle, real_total_goals, problemas):
+def render(scores, ranking, detalle, real_total_goals, problemas, knockout_html=""):
     now = datetime.now().strftime("%d/%m/%Y %H:%M")
     jugados = sum(1 for r in detalle if r["fx"]["status"] == "FT")
 
@@ -325,7 +503,7 @@ footer{{text-align:center;color:#8693a0;font-size:.78rem;padding:22px 10px}}
     </table>
     </div>
   </section>
-
+{knockout_html}
   <footer>
     Generado automáticamente desde <code>fixtures.json</code> + <code>quiniela_data.json</code>.<br>
     Los resultados se emparejan por equipos contra el calendario oficial de la FIFA.

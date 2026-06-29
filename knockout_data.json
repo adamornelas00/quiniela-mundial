@@ -1,0 +1,331 @@
+{
+  "rounds": [
+    {
+      "key": "r32",
+      "label": "16avos de final"
+    },
+    {
+      "key": "r16",
+      "label": "Octavos de final"
+    },
+    {
+      "key": "qf",
+      "label": "Cuartos de final"
+    },
+    {
+      "key": "sf",
+      "label": "Semifinales"
+    },
+    {
+      "key": "final",
+      "label": "Final"
+    },
+    {
+      "key": "third",
+      "label": "Tercer lugar"
+    }
+  ],
+  "scoring": {
+    "nota": "Puntos por acertar qué equipo AVANZA a cada ronda. Tentativo: ajústalo cuando se acuerden las reglas.",
+    "points": {
+      "r16": 1,
+      "qf": 2,
+      "sf": 4,
+      "final": 6,
+      "campeon": 10,
+      "third": 4
+    }
+  },
+  "real": {
+    "r16": [],
+    "qf": [],
+    "sf": [],
+    "final": [],
+    "campeon": null,
+    "third": null
+  },
+  "players": {
+    "Adam": {
+      "r32": [
+        {
+          "home": "Alemania",
+          "hg": 2,
+          "away": "Paraguay",
+          "ag": 0,
+          "pens": null,
+          "winner": "Alemania"
+        },
+        {
+          "home": "Francia",
+          "hg": 3,
+          "away": "Suecia",
+          "ag": 1,
+          "pens": null,
+          "winner": "Francia"
+        },
+        {
+          "home": "Sudáfrica",
+          "hg": 1,
+          "away": "Canadá",
+          "ag": 2,
+          "pens": null,
+          "winner": "Canadá"
+        },
+        {
+          "home": "Países Bajos",
+          "hg": 2,
+          "away": "Marruecos",
+          "ag": 1,
+          "pens": null,
+          "winner": "Países Bajos"
+        },
+        {
+          "home": "Portugal",
+          "hg": 1,
+          "away": "Croacia",
+          "ag": 1,
+          "pens": [
+            4,
+            3
+          ],
+          "winner": "Portugal"
+        },
+        {
+          "home": "España",
+          "hg": 3,
+          "away": "Austria",
+          "ag": 0,
+          "pens": null,
+          "winner": "España"
+        },
+        {
+          "home": "EE.UU.",
+          "hg": 2,
+          "away": "Bosnia-Herz.",
+          "ag": 1,
+          "pens": null,
+          "winner": "EE.UU."
+        },
+        {
+          "home": "Bélgica",
+          "hg": 2,
+          "away": "Senegal",
+          "ag": 1,
+          "pens": null,
+          "winner": "Bélgica"
+        },
+        {
+          "home": "Brasil",
+          "hg": 2,
+          "away": "Japón",
+          "ag": 1,
+          "pens": null,
+          "winner": "Brasil"
+        },
+        {
+          "home": "Costa de Marfil",
+          "hg": 1,
+          "away": "Noruega",
+          "ag": 1,
+          "pens": [
+            3,
+            4
+          ],
+          "winner": "Noruega"
+        },
+        {
+          "home": "México",
+          "hg": 2,
+          "away": "Ecuador",
+          "ag": 1,
+          "pens": null,
+          "winner": "México"
+        },
+        {
+          "home": "Inglaterra",
+          "hg": 3,
+          "away": "RD del Congo",
+          "ag": 0,
+          "pens": null,
+          "winner": "Inglaterra"
+        },
+        {
+          "home": "Argentina",
+          "hg": 3,
+          "away": "Cabo Verde",
+          "ag": 0,
+          "pens": null,
+          "winner": "Argentina"
+        },
+        {
+          "home": "Australia",
+          "hg": 1,
+          "away": "Egipto",
+          "ag": 2,
+          "pens": null,
+          "winner": "Egipto"
+        },
+        {
+          "home": "Suiza",
+          "hg": 2,
+          "away": "Argelia",
+          "ag": 1,
+          "pens": null,
+          "winner": "Suiza"
+        },
+        {
+          "home": "Colombia",
+          "hg": 2,
+          "away": "Ghana",
+          "ag": 0,
+          "pens": null,
+          "winner": "Colombia"
+        }
+      ],
+      "r16": [
+        {
+          "home": "Alemania",
+          "hg": 1,
+          "away": "Francia",
+          "ag": 2,
+          "pens": null,
+          "winner": "Francia"
+        },
+        {
+          "home": "Canadá",
+          "hg": 1,
+          "away": "Países Bajos",
+          "ag": 2,
+          "pens": null,
+          "winner": "Países Bajos"
+        },
+        {
+          "home": "Portugal",
+          "hg": 1,
+          "away": "España",
+          "ag": 2,
+          "pens": null,
+          "winner": "España"
+        },
+        {
+          "home": "EE.UU.",
+          "hg": 1,
+          "away": "Bélgica",
+          "ag": 2,
+          "pens": null,
+          "winner": "Bélgica"
+        },
+        {
+          "home": "Brasil",
+          "hg": 2,
+          "away": "Noruega",
+          "ag": 1,
+          "pens": null,
+          "winner": "Brasil"
+        },
+        {
+          "home": "México",
+          "hg": 1,
+          "away": "Inglaterra",
+          "ag": 1,
+          "pens": [
+            3,
+            4
+          ],
+          "winner": "Inglaterra"
+        },
+        {
+          "home": "Argentina",
+          "hg": 2,
+          "away": "Egipto",
+          "ag": 0,
+          "pens": null,
+          "winner": "Argentina"
+        },
+        {
+          "home": "Suiza",
+          "hg": 1,
+          "away": "Colombia",
+          "ag": 2,
+          "pens": null,
+          "winner": "Colombia"
+        }
+      ],
+      "qf": [
+        {
+          "home": "Francia",
+          "hg": 2,
+          "away": "Países Bajos",
+          "ag": 1,
+          "pens": null,
+          "winner": "Francia"
+        },
+        {
+          "home": "España",
+          "hg": 2,
+          "away": "Bélgica",
+          "ag": 1,
+          "pens": null,
+          "winner": "España"
+        },
+        {
+          "home": "Brasil",
+          "hg": 2,
+          "away": "Inglaterra",
+          "ag": 1,
+          "pens": null,
+          "winner": "Brasil"
+        },
+        {
+          "home": "Argentina",
+          "hg": 2,
+          "away": "Colombia",
+          "ag": 1,
+          "pens": null,
+          "winner": "Argentina"
+        }
+      ],
+      "sf": [
+        {
+          "home": "Francia",
+          "hg": 2,
+          "away": "España",
+          "ag": 1,
+          "pens": null,
+          "winner": "Francia"
+        },
+        {
+          "home": "Brasil",
+          "hg": 1,
+          "away": "Argentina",
+          "ag": 1,
+          "pens": [
+            2,
+            4
+          ],
+          "winner": "Argentina"
+        }
+      ],
+      "final": {
+        "home": "Francia",
+        "hg": 2,
+        "away": "Argentina",
+        "ag": 1,
+        "pens": null,
+        "winner": "Francia"
+      },
+      "third": {
+        "home": "España",
+        "hg": 2,
+        "away": "Brasil",
+        "ag": 1,
+        "pens": null,
+        "winner": "España"
+      },
+      "campeon": "Francia"
+    },
+    "Diego": null,
+    "Fer": null,
+    "Santiago": null
+  }
+}

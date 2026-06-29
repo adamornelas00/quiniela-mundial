@@ -3,4 +3,5 @@ publicar.command
 .DS_Store
 _verify.py
 _seed_fixtures.py
+_seed_knockout.py
 __pycache__/
