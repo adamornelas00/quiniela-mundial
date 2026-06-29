@@ -142,8 +142,48 @@ def score_knockout(bracket, real, points):
     return pts, detail
 
 
-def _kmatch_card(mt):
-    """Tarjeta de un partido de bracket."""
+def ko_pair_index(bracket):
+    """frozenset(equipos) -> partido predicho (todas las rondas del bracket)."""
+    idx = {}
+    for r in ("r32", "r16", "qf", "sf"):
+        for mt in bracket.get(r, []):
+            idx[frozenset((mt["home"], mt["away"]))] = mt
+    for single in ("final", "third"):
+        mt = bracket.get(single)
+        if mt:
+            idx[frozenset((mt["home"], mt["away"]))] = mt
+    return idx
+
+
+def score_ko_player(bracket, real_matches):
+    """Puntúa la eliminatoria igual que grupos (+1/+1/+1), emparejando por equipos.
+
+    Devuelve totales y el detalle por par {frozenset: {pts, exact}} para anotar el bracket.
+    """
+    idx = ko_pair_index(bracket)
+    pts = exact = played = 0
+    per_pair = {}
+    for rm in real_matches:
+        key = frozenset((rm["home"], rm["away"]))
+        mt = idx.get(key)
+        if not mt:
+            continue  # el jugador no predijo este cruce
+        # orientar la predicción a la orientación local/visitante del partido real
+        if mt["home"] == rm["home"]:
+            ph, pa = mt["hg"], mt["ag"]
+        else:
+            ph, pa = mt["ag"], mt["hg"]
+        p, ex, _ = points_for(ph, pa, rm["hg"], rm["ag"])
+        pts += p
+        played += 1
+        if ex:
+            exact += 1
+        per_pair[key] = {"pts": p, "exact": ex}
+    return {"pts": pts, "exact": exact, "played": played, "per_pair": per_pair}
+
+
+def _kmatch_card(mt, real_index=None, detail=None):
+    """Tarjeta de un partido de bracket. Si hay resultado real del cruce, lo anota."""
     if not mt:
         return ""
     h, a = mt["home"], mt["away"]
@@ -154,20 +194,43 @@ def _kmatch_card(mt):
         pen = f'<div class="kpen">penales {mt["pens"][0]}-{mt["pens"][1]}</div>'
     rh = "krow win" if win == h else "krow"
     ra = "krow win" if win == a else "krow"
+
+    rb = ""
+    if real_index is not None:
+        rm = real_index.get(frozenset((h, a)))
+        if rm:
+            if rm["home"] == h:
+                rhg, rag, pp = rm["hg"], rm["ag"], rm.get("pens")
+            else:
+                rhg, rag = rm["ag"], rm["hg"]
+                pp = list(reversed(rm["pens"])) if rm.get("pens") else None
+            rpen = f' · pen {pp[0]}-{pp[1]}' if pp else ""
+            d = (detail or {}).get(frozenset((h, a)))
+            badge = ""
+            if d is not None:
+                if d["exact"]:
+                    badge = '<span class="kb ex">+3 ✓</span>'
+                elif d["pts"] > 0:
+                    badge = f'<span class="kb pa">+{d["pts"]}</span>'
+                else:
+                    badge = '<span class="kb ze">0</span>'
+            rb = f'<div class="kreal">real {rhg}-{rag}{rpen} {badge}</div>'
+
     return (
         f'<div class="kmatch">'
         f'<div class="{rh}"><span class="kt">{flag(h)} {h}</span><span class="kg">{hg}</span></div>'
         f'<div class="{ra}"><span class="kt">{flag(a)} {a}</span><span class="kg">{ag}</span></div>'
-        f'{pen}</div>'
+        f'{pen}{rb}</div>'
     )
 
 
-def _kcolumn(title, matches):
-    cards = "".join(_kmatch_card(m) for m in matches)
+def _kcolumn(title, matches, real_index=None, detail=None):
+    cards = "".join(_kmatch_card(m, real_index, detail) for m in matches)
     return f'<div class="kcol"><div class="kcol-h">{title}</div>{cards}</div>'
 
 
-def render_player_bracket(player, bracket):
+def render_player_bracket(player, bracket, real_index=None, detail=None,
+                          ko_pts=0, ko_played=0):
     champ = bracket["campeon"]
     fin = bracket["final"]
     runner = loser_of(fin)
@@ -175,18 +238,23 @@ def render_player_bracket(player, bracket):
     podium = (f'🥇 {flag(champ)} {champ} · 🥈 {flag(runner)} {runner} · '
               f'🥉 {flag(third)} {third}')
     cols = (
-        _kcolumn("16avos", bracket["r32"])
-        + _kcolumn("Octavos", bracket["r16"])
-        + _kcolumn("Cuartos", bracket["qf"])
-        + _kcolumn("Semis", bracket["sf"])
-        + _kcolumn("Final", [bracket["final"]])
-        + _kcolumn("3er lugar", [bracket["third"]])
+        _kcolumn("16avos", bracket["r32"], real_index, detail)
+        + _kcolumn("Octavos", bracket["r16"], real_index, detail)
+        + _kcolumn("Cuartos", bracket["qf"], real_index, detail)
+        + _kcolumn("Semis", bracket["sf"], real_index, detail)
+        + _kcolumn("Final", [bracket["final"]], real_index, detail)
+        + _kcolumn("3er lugar", [bracket["third"]], real_index, detail)
     )
+    subtotal = ""
+    if ko_played:
+        subtotal = (f'<span class="ko-sub">🏅 {ko_pts} pts de eliminatoria '
+                    f'· {ko_played} jugado(s)</span>')
     return f"""
     <div class="ko-player">
       <div class="ko-head">
         <span class="ko-name">{player}</span>
         <span class="ko-podium">{podium}</span>
+        {subtotal}
       </div>
       <div class="bracketwrap"><div class="bracket">{cols}</div></div>
     </div>"""
@@ -199,6 +267,12 @@ KO_CSS = """
 .ko-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
 .ko-name{font-weight:800;color:#0d1b2a;font-size:1.1rem}
 .ko-podium{background:#fff8e6;border:1px solid #c7ae4a;border-radius:20px;padding:3px 12px;font-size:.85rem;font-weight:600}
+.ko-sub{background:#e7f6ec;border:1px solid #1a7d3c;color:#1a7d3c;border-radius:20px;padding:3px 12px;font-size:.85rem;font-weight:700}
+.kreal{font-size:.68rem;text-align:center;background:#f2f5f9;color:#42525f;padding:2px 4px;border-top:1px solid #e6ebf1}
+.kb{font-weight:800;border-radius:4px;padding:0 4px;margin-left:3px}
+.kb.ex{background:#1a7d3c;color:#fff}
+.kb.pa{background:#d7eede;color:#1a7d3c}
+.kb.ze{background:#fde8e8;color:#9b2226}
 .bracketwrap{overflow-x:auto;padding-bottom:6px}
 .bracket{display:flex;gap:10px;min-width:max-content}
 .kcol{display:flex;flex-direction:column;justify-content:space-around;gap:8px;min-width:148px}
@@ -213,25 +287,32 @@ KO_CSS = """
 </style>"""
 
 
-def render_knockout(knockout):
+def render_knockout(knockout, scores=None):
     """Sección 'Fase Eliminatoria'. Devuelve '' si no hay datos (no rompe el build)."""
     if not knockout or not knockout.get("players"):
         return ""
     players = knockout["players"]
-    pts = knockout.get("scoring", {}).get("points", {})
+    scores = scores or {}
+    real_matches = knockout.get("real_matches", []) or []
+    real_index = {frozenset((m["home"], m["away"])): m for m in real_matches}
+    n = len(real_matches)
+    jugados = (f' Hasta ahora se han jugado <b>{n}</b> partido(s) de eliminatoria.'
+               if n else ' Aún no hay partidos de eliminatoria jugados.')
     rules = (
-        f'<div class="ko-rules"><b>Fase eliminatoria — puntuación (tentativa):</b> '
-        f'acertar qué equipo llega a Octavos +{pts.get("r16",1)}, a Cuartos +{pts.get("qf",2)}, '
-        f'a Semis +{pts.get("sf",4)}, a la Final +{pts.get("final",6)}, '
-        f'Campeón +{pts.get("campeon",10)}, 3er lugar +{pts.get("third",4)}. '
-        f'Se empieza a contar cuando inicien las eliminatorias.</div>'
+        '<div class="ko-rules"><b>Fase eliminatoria — puntuación:</b> '
+        'misma regla que grupos (+1 ganador, +1 goles del local, +1 goles del visitante; '
+        'máx. 3 por partido). Estos puntos <b>ya están sumados a la tabla general de arriba</b>.'
+        + jugados + '</div>'
     )
     bodies = ""
     pendientes = []
     for p in PLAYERS:
         b = players.get(p)
         if b:
-            bodies += render_player_bracket(p, b)
+            s = scores.get(p, {})
+            bodies += render_player_bracket(
+                p, b, real_index, s.get("ko_detail"),
+                s.get("ko", 0), s.get("ko_played", 0))
         else:
             pendientes.append(p)
     if pendientes:
@@ -322,16 +403,29 @@ def main():
                 row["picks"][player] = {"ph": p_home, "pa": p_away, "pts": None, "exact": False}
         detalle.append(row)
 
-    # ---- Orden con desempates ----
+    # ---- Puntos de fase eliminatoria (misma regla que grupos) ----
+    knockout = load_json_optional("knockout_data.json")
+    ko_real = (knockout or {}).get("real_matches", []) or []
+    ko_players = (knockout or {}).get("players", {})
+    for p in PLAYERS:
+        b = ko_players.get(p)
+        ks = score_ko_player(b, ko_real) if b else {
+            "pts": 0, "exact": 0, "played": 0, "per_pair": {}}
+        scores[p]["ko"] = ks["pts"]
+        scores[p]["ko_exact"] = ks["exact"]
+        scores[p]["ko_played"] = ks["played"]
+        scores[p]["ko_detail"] = ks["per_pair"]
+        scores[p]["total"] = scores[p]["points"] + ks["pts"]
+
+    # ---- Orden con desempates (por TOTAL: grupos + eliminatoria) ----
     ranking = sorted(
         PLAYERS,
-        key=lambda p: (scores[p]["points"], scores[p]["exact"],
+        key=lambda p: (scores[p]["total"], scores[p]["exact"] + scores[p]["ko_exact"],
                        -abs(scores[p]["pred_goals"] - real_total_goals)),
         reverse=True,
     )
 
-    knockout = load_json_optional("knockout_data.json")
-    knockout_html = render_knockout(knockout)
+    knockout_html = render_knockout(knockout, scores)
 
     html = render(scores, ranking, detalle, real_total_goals, problemas, knockout_html)
     out = os.path.join(WORKSPACE, "index.html")
@@ -345,8 +439,8 @@ def main():
     print("   Tabla:")
     for i, p in enumerate(ranking, 1):
         s = scores[p]
-        print(f"   {i}. {p}: {s['points']} pts (exactos {s['exact']}, "
-              f"errados {s['wrong']}, jugados {s['played']}, goles pred {s['pred_goals']})")
+        print(f"   {i}. {p}: {s['total']} pts (grupos {s['points']} + elim {s['ko']}; "
+              f"exactos {s['exact']+s['ko_exact']}, jugados {s['played']+s['ko_played']})")
     if problemas:
         print("\n⚠️  PROBLEMAS DE EMPAREJAMIENTO:")
         for x in problemas:
@@ -385,13 +479,14 @@ def render(scores, ranking, detalle, real_total_goals, problemas, knockout_html=
       <div class="card rank{i+1}">
         <div class="medal">{MEDALS[i]}</div>
         <div class="pname">{p}</div>
-        <div class="pts">{s['points']}<span>pts</span></div>
+        <div class="pts">{s['total']}<span>pts</span></div>
+        <div class="brk2">🏆 {s['points']} grupos · 🏅 +{s['ko']} elim</div>
         <div class="brk">
-          <span title="Marcadores exactos">🎯 {s['exact']} exactos</span>
+          <span title="Marcadores exactos">🎯 {s['exact']+s['ko_exact']} exactos</span>
           <span title="Aciertos parciales">➕ {s['result']+s['local']+s['visit']} parciales</span>
           <span title="Sin acertar">❌ {s['wrong']}</span>
         </div>
-        <div class="brk2">Goles predichos: {s['pred_goals']} · Jugados: {s['played']}</div>
+        <div class="brk2">Goles predichos: {s['pred_goals']} · Jugados: {s['played']+s['ko_played']}</div>
       </div>"""
 
     # tabla cronológica

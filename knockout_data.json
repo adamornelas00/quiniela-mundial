@@ -26,24 +26,37 @@
     }
   ],
   "scoring": {
-    "nota": "Puntos por acertar qué equipo AVANZA a cada ronda. Tentativo: ajústalo cuando se acuerden las reglas.",
-    "points": {
-      "r16": 1,
-      "qf": 2,
-      "sf": 4,
-      "final": 6,
-      "campeon": 10,
-      "third": 4
+    "nota": "Misma regla que grupos: +1 ganador, +1 goles local, +1 goles visitante por partido (máx 3). Se empareja por equipos."
+  },
+  "real_matches": [
+    {
+      "home": "Sudáfrica",
+      "away": "Canadá",
+      "hg": 0,
+      "ag": 1,
+      "pens": null,
+      "date": "2026-06-28"
+    },
+    {
+      "home": "Alemania",
+      "away": "Paraguay",
+      "hg": 1,
+      "ag": 1,
+      "pens": [
+        3,
+        4
+      ],
+      "date": "2026-06-29"
+    },
+    {
+      "home": "Brasil",
+      "away": "Japón",
+      "hg": 2,
+      "ag": 1,
+      "pens": null,
+      "date": "2026-06-29"
     }
-  },
-  "real": {
-    "r16": [],
-    "qf": [],
-    "sf": [],
-    "final": [],
-    "campeon": null,
-    "third": null
-  },
+  ],
   "players": {
     "Adam": {
       "r32": [
