@@ -94,13 +94,10 @@
         },
         {
           "home": "Portugal",
-          "hg": 1,
+          "hg": 2,
           "away": "Croacia",
           "ag": 1,
-          "pens": [
-            4,
-            3
-          ],
+          "pens": null,
           "winner": "Portugal"
         },
         {
@@ -139,11 +136,8 @@
           "home": "Costa de Marfil",
           "hg": 1,
           "away": "Noruega",
-          "ag": 1,
-          "pens": [
-            3,
-            4
-          ],
+          "ag": 2,
+          "pens": null,
           "winner": "Noruega"
         },
         {
@@ -240,11 +234,8 @@
           "home": "México",
           "hg": 1,
           "away": "Inglaterra",
-          "ag": 1,
-          "pens": [
-            3,
-            4
-          ],
+          "ag": 2,
+          "pens": null,
           "winner": "Inglaterra"
         },
         {
@@ -311,11 +302,8 @@
           "home": "Brasil",
           "hg": 1,
           "away": "Argentina",
-          "ag": 1,
-          "pens": [
-            2,
-            4
-          ],
+          "ag": 2,
+          "pens": null,
           "winner": "Argentina"
         }
       ],
