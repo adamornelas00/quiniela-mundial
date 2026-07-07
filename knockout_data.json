@@ -221,6 +221,17 @@
       "ag": 2,
       "pens": null,
       "date": "2026-07-07"
+    },
+    {
+      "home": "Suiza",
+      "away": "Colombia",
+      "hg": 0,
+      "ag": 0,
+      "pens": [
+        4,
+        3
+      ],
+      "date": "2026-07-07"
     }
   ],
   "players": {
