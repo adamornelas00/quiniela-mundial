@@ -232,6 +232,14 @@
         3
       ],
       "date": "2026-07-07"
+    },
+    {
+      "home": "Francia",
+      "away": "Marruecos",
+      "hg": 2,
+      "ag": 0,
+      "pens": null,
+      "date": "2026-07-09"
     }
   ],
   "players": {
